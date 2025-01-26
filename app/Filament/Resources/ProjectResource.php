@@ -31,7 +31,8 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Select::make('category_id')->relationship('category', 'name')->required(),
+                    Select::make('category_id')->relationship('category', 'name')->required()->label('Project Category'),
+                    Select::make('other_category_id')->relationship('otherCategory', 'name')->required()->label('Other Category'),
                     TextInput::make('name')
                         ->required()
                         ->live(debounce: '1000')

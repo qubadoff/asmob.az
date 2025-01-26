@@ -22,4 +22,9 @@ class Project extends Model
     {
         return $this->belongsTo(ProjectCategory::class);
     }
+
+    public function otherCategory(): BelongsTo
+    {
+        return $this->belongsTo(OtherCategory::class);
+    }
 }
