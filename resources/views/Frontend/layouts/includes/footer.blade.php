@@ -1,66 +1,49 @@
-<footer class="tzFooter tzFooter-Type-2">
-    <div class="tzFooterTop">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 footerattr">
-                    <aside id="contact_info-2" class="widget_contact_info widget">
-                        <h3 class="module-title title-widget"><span>Contact info</span></h3>
-                        <div class="tzwidget-contact">
-                            <p class="tzContact_description"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Phasellus vel erat ultrices, commodo lectus eu, finibus diam.</p> <span
-                                class="tzContact_address"><i class="fa fa-map-marker"></i>Ha Noi, Viet Nam</span>
-                            <span class="tzContact_phone"><i class="fa fa-phone"></i>+0123456789</span> <span
-                                class="tzContact_email"><i class="far fa-envelope"></i>info@templaza.com</span>
-                            <span class="tzContact_website"><i class="fa fa-globe"></i>templaza.com</span>
-                        </div>
-                    </aside>
-                </div><!--end class footermenu-->
-                <div class="col-md-3 footerattr">
-                    <aside id="newsletterwidget-2" class="widget_newsletterwidget widget">
-                        <h3 class="module-title title-widget">
-                            <span>Newsletter</span>
-                        </h3>
-
-                        <div class="tnp tnp-subscription tnp-widget">
-                            <form method="post"
-                                  action="https://interiart.templaza.net/wp-admin/admin-ajax.php?action=tnp&amp;na=s">
-                                <input type="hidden" name="nr" value="widget"> <input type="hidden" name="nlang"
-                                                                                      value="">
-                                <div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label> <input
-                                        class="tnp-email" type="email" name="ne" id="tnp-1" value="" placeholder=""
-                                        required></div>
-                                <div class="tnp-field tnp-field-button" style="text-align: left"><input
-                                        class="tnp-submit" type="submit" value="Subscribe" style=""></div>
-                            </form>
-                        </div>
-                    </aside>
-                </div><!--end class footermenu-->
+<!--footer section start-->
+<footer class="footer-section pt-120 overflow-hidden footer-mobile-accordion">
+    <div class="container-1700">
+        <div class="row g-4">
+            <div class="col-xl-4 col-md-6 col-sm-8">
+                <div class="footer-widget subscribe-widget">
+                    <h4 class="mb-40">Stay informed of our newest promotions and more</h4>
+                    <form action="#" class="d-flex align-items-center">
+                        <label>
+                            <i class="far fa-envelope"></i>
+                            <input type="email" placeholder="Email Address">
+                        </label>
+                        <button type="submit" class="template-btn primary-btn btn-md flex-shrink-0">Subscribe</button>
+                    </form>
+                    <div class="mt-50 footer-socials d-flex align-items-center flex-wrap">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
             </div>
-        </div><!--end class container-->
+            <div class="col-xl-2 col-lg-3 col-md-5 offset-md-1 offset-lg-0 col-sm-4">
+                <div class="footer-widget footer-nav-widget">
+                    <h6 class="widget-title text-uppecase mb-30">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Bestsellers</a></li>
+                        <li><a href="#">Combos</a></li>
+                        <li><a href="#">Socks</a></li>
+                        <li><a href="#">Face Masks</a></li>
+                        <li><a href="#">Gifting Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                <div class="footer-widget footer-contact-widget">
+                    <h6 class="widget-title text-uppercase mb-30">Contact</h6>
+                    <ul class="footer-address">
+                        <li><a href="tel:21598759">+(215) 2153.214562</a></li>
+                        <li>215 Ninton Street United State</li>
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="tzFooterBottom">
-        <div class="container">
-            <div class="tzCopyright pull-left">
-                <p>
-                    ASMOB © {{ date('Y') }}
-                </p>
-            </div>
-            <div class="tzFooterSocial pull-right">
-                <ul>
-                    <li> <a target="_self" href="https://www.facebook.com/templaza"><i
-                                class="fab fa-facebook-f"></i></a></li>
-                    <li> <a target="_self" href="https://twitter.com/templazavn"><i
-                                class="fa-brands fa-x-twitter"></i></a></li>
-                    <li> <a target="_self" href="https://www.youtube.com/channel/UCykS6SX6L2GOI-n3IOPfTVQ/videos"><i
-                                class="fab fa-youtube"></i></a></li>
-                    <li> <a target="_self" href="http://dribbble.com/templaza"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                    <li> <a target="_self" href="https://www.behance.net/templaza"><i
-                                class="fab fa-behance"></i></a></li>
-                </ul>
-            </div>
-        </div><!--end class container-->
-    </div><!--end class footerbottom -->
-    <div class="tz_backtotop tz_btt_position_right">
-        <a href="javascript:" id="return_to_top" class="#"> <i class="fa fa-angle-up"></i> </a></div>
 </footer>
+<!--footer section end-->

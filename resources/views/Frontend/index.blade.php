@@ -1,675 +1,379 @@
 @extends('Frontend.layouts.app')
 
+
+@section('title')
+    Ana Səhifə
+@endsection
+
 @section('content')
-    <div class="wpb_revslider_element wpb_content_element">
-        <!-- START slide home 8 REVOLUTION SLIDER 6.7.25 -->
-        <p class="rs-p-wp-fix"></p>
-
-        <rs-module-wrap id="rev_slider_13_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-            <rs-module id="rev_slider_13_1" style="" data-version="6.7.25">
-                <rs-slides style="overflow: hidden; position: absolute;">
-                    <rs-slide
-                        style="position: absolute;" data-key="rs-35" data-title="Slide"
-                        data-thumb="//interiart.templaza.net/wp-content/uploads/2015/07/breather-181282-100x50.jpg"
-                        data-anim="adpr:false;" data-in="o:0;" data-out="a:false;"> <img
-                            decoding="async"
-                            src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt=""
-                            title="breather-181282" width="1920" height="1080"
-                            class="rev-slidebg tp-rs-img rs-lazyload"
-                            data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/breather-181282.jpg"
-                            data-no-retina> <!----><rs-layer id="slider-13-slide-35-layer-2" data-type="image" data-rsp_ch="on" data-xy="x:c;y:m;" data-text="l:22;"
-                                                             data-dim="w:[&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;];h:[&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;];"
-                                                             data-frame_1="e:power2.inOut;st:500;sR:500;"
-                                                             data-frame_999="o:0;e:nothing;st:w;sR:8200;" style="z-index:5;">
-                            <img
-                                decoding="async"
-                                src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                alt="" class="tp-rs-img rs-lazyload" width="228" height="380"
-                                data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/Draw-Compass-1.png"
-                                data-no-retina>
-                        </rs-layer><!----><rs-layer id="slider-13-slide-35-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                    data-xy="x:c;y:m;" data-dim="w:15px;h:15px;" data-vbility="t,t,f,f"
-                                                    data-border="bos:solid;boc:rgba(229, 174, 73, 1);bow:3,3,3,3;bor:7px,7px,7px,7px;"
-                                                    data-frame_1="e:none;st:2000;sR:2000;"
-                                                    data-frame_999="o:0;e:nothing;st:w;sR:6700;" style="z-index:7;">
-                        </rs-layer><!----><rs-layer id="slider-13-slide-35-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                    data-xy="xo:637px,543px,420px,420px;y:m;" data-dim="w:300px;h:1px;"
-                                                    data-vbility="t,t,f,f" data-frame_0="x:50px;"
-                                                    data-frame_1="e:none;st:2300;sp:500;sR:2300;"
-                                                    data-frame_999="o:0;e:nothing;st:w;sR:6200;"
-                                                    style="z-index:8;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-35-layer-5" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                                                                                                         data-xy="xo:303px,192px,71px,71px;y:m;" data-dim="w:300px;h:1px;"
-                                                                                                                                         data-vbility="t,t,f,f" data-frame_0="x:-50px;"
-                                                                                                                                         data-frame_1="e:none;st:2300;sp:500;sR:2300;"
-                                                                                                                                         data-frame_999="o:0;e:nothing;st:w;sR:6200;"
-                                                                                                                                         style="z-index:9;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-35-layer-6" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                                                                                                                                                              data-xy="x:c;y:m,t,t,m;yo:-40px,302px,440px,-27px;"
-                                                                                                                                                                                                                              data-text="s:48,48,24,14;l:80,80,40,40;ls:2px;" data-frame_0="y:-50px;"
-                                                                                                                                                                                                                              data-frame_1="e:none;st:1000;sp:800;sR:1000;"
-                                                                                                                                                                                                                              data-frame_999="o:0;e:nothing;st:w;sR:7200;"
-                                                                                                                                                                                                                              style="z-index:6;font-family:'Ubuntu';text-transform:uppercase;">we’re
-                            interiart wordpress theme </rs-layer><!----><rs-layer id="slider-13-slide-35-layer-7" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                  data-xy="x:c;xo:1px,1px,0,0;y:m,t,t,m;yo:40px,384px,489px,-1px;"
-                                                                                  data-text="s:50,50,30,18;l:80,80,40,40;ls:2px;fw:700;"
-                                                                                  data-frame_1="e:none;st:2900;sp:800;sR:2900;"
-                                                                                  data-frame_999="o:0;e:nothing;st:w;sR:5300;"
-                                                                                  style="z-index:10;font-family:'Ubuntu';text-transform:uppercase;">
-                            Furniture & Interior Design </rs-layer><!----> </rs-slide> <rs-slide style="position: absolute;" data-key="rs-36" data-title="Slide"
-                                                                                                 data-thumb="//interiart.templaza.net/wp-content/uploads/2015/07/3-100x50.jpg"
-                                                                                                 data-anim="adpr:false;"> <img decoding="async"
-                                                                                                                               src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt=""
-                                                                                                                               title="3" width="1920" height="1275"
-                                                                                                                               class="rev-slidebg tp-rs-img rs-lazyload"
-                                                                                                                               data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/3.jpg"
-                                                                                                                               data-no-retina> <!----><rs-layer id="slider-13-slide-36-layer-2" data-type="image" data-rsp_ch="on" data-xy="x:c;y:m;" data-text="l:22;"
-                                                                                                                                                                data-dim="w:[&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;];h:[&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;];"
-                                                                                                                                                                data-frame_0="tp:600;"
-                                                                                                                                                                data-frame_1="tp:600;e:power2.inOut;st:500;sR:500;"
-                                                                                                                                                                data-frame_999="o:0;tp:600;e:nothing;st:w;sR:8200;"
-                                                                                                                                                                style="z-index:5;"><img decoding="async"
-                                                                                                                                                                                        src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                                                                                                                                                        alt="" class="tp-rs-img rs-lazyload" width="228" height="380"
-                                                                                                                                                                                        data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/Draw-Compass-1.png"
-                                                                                                                                                                                        data-no-retina> </rs-layer><!----><rs-layer id="slider-13-slide-36-layer-6" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                                                                                                                                                                    data-xy="x:c;y:m,t,t,m;yo:-40px,302px,440px,-27px;"
-                                                                                                                                                                                                                                    data-text="s:48,48,24,14;l:80,80,40,40;" data-frame_0="y:-50px;tp:600;"
-                                                                                                                                                                                                                                    data-frame_1="tp:600;e:none;st:1000;sp:800;sR:1000;"
-                                                                                                                                                                                                                                    data-frame_999="o:0;tp:600;e:nothing;st:w;sR:7200;"
-                                                                                                                                                                                                                                    style="z-index:6;font-family:'Ubuntu';text-transform:uppercase;letter-spacing:2px;">we’re
-                            winning awards </rs-layer><!----><rs-layer id="slider-13-slide-36-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                                       data-xy="x:c;y:m;" data-dim="w:15px;h:15px;" data-vbility="t,t,f,f"
-                                                                       data-border="bos:solid;boc:rgba(229, 174, 73, 1);bow:3,3,3,3;bor:7px,7px,7px,7px;"
-                                                                       data-frame_0="tp:600;" data-frame_1="tp:600;e:none;st:2000;sR:2000;"
-                                                                       data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6700;" style="z-index:7;">
-                        </rs-layer><!----><rs-layer id="slider-13-slide-36-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                    data-xy="xo:637px,543px,420px,420px;y:m;" data-dim="w:300px;h:1px;"
-                                                    data-vbility="t,t,f,f" data-frame_0="x:50px;tp:600;"
-                                                    data-frame_1="tp:600;e:none;st:2300;sp:500;sR:2300;"
-                                                    data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6200;"
-                                                    style="z-index:8;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-36-layer-5" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                                                                                                         data-xy="xo:303px,192px,71px,71px;y:m;" data-dim="w:300px;h:1px;"
-                                                                                                                                         data-vbility="t,t,f,f" data-frame_0="x:-50px;tp:600;"
-                                                                                                                                         data-frame_1="tp:600;e:none;st:2300;sp:500;sR:2300;"
-                                                                                                                                         data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6200;"
-                                                                                                                                         style="z-index:9;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-36-layer-7" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                                                                                                                                                              data-xy="x:c;xo:1px,1px,0,0;y:m,t,t,m;yo:39px,384px,489px,-1px;"
-                                                                                                                                                                                                                              data-text="s:50,50,30,18;l:80,80,40,40;fw:700;" data-frame_0="tp:600;"
-                                                                                                                                                                                                                              data-frame_1="tp:600;e:none;st:2900;sp:800;sR:2900;"
-                                                                                                                                                                                                                              data-frame_999="o:0;tp:600;e:nothing;st:w;sR:5300;"
-                                                                                                                                                                                                                              style="z-index:10;font-family:'Ubuntu';text-transform:uppercase;letter-spacing:2px;">architecture
-                            studio </rs-layer><!----> </rs-slide> <rs-slide style="position: absolute;" data-key="rs-37" data-title="Slide"
-                                                                            data-thumb="//interiart.templaza.net/wp-content/uploads/2015/07/ATDesign-nordic-style-living-in-monochrome-100x50.jpg"
-                                                                            data-anim="adpr:false;"> <img decoding="async"
-                                                                                                          src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt=""
-                                                                                                          title="ATDesign-nordic-style-living-in-monochrome" width="2000"
-                                                                                                          height="1250" class="rev-slidebg tp-rs-img rs-lazyload"
-                                                                                                          data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/ATDesign-nordic-style-living-in-monochrome.jpg"
-                                                                                                          data-no-retina> <!----><rs-layer id="slider-13-slide-37-layer-2" data-type="image" data-rsp_ch="on" data-xy="x:c;y:m;" data-text="l:22;"
-                                                                                                                                           data-dim="w:[&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;,&#039;228px&#039;];h:[&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;,&#039;380px&#039;];"
-                                                                                                                                           data-frame_0="tp:600;"
-                                                                                                                                           data-frame_1="tp:600;e:power2.inOut;st:500;sR:500;"
-                                                                                                                                           data-frame_999="o:0;tp:600;e:nothing;st:w;sR:8200;"
-                                                                                                                                           style="z-index:5;"><img decoding="async"
-                                                                                                                                                                   src="{{ url('/') }}/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                                                                                                                                   alt="" class="tp-rs-img rs-lazyload" width="228" height="380"
-                                                                                                                                                                   data-lazyload="//interiart.templaza.net/wp-content/uploads/2015/07/Draw-Compass-1.png"
-                                                                                                                                                                   data-no-retina> </rs-layer><!----><rs-layer id="slider-13-slide-37-layer-6" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                                                                                                                                               data-xy="x:c;y:m,t,t,m;yo:-42px,302px,440px,-27px;"
-                                                                                                                                                                                                               data-text="s:48,48,24,14;l:80,80,40,40;" data-frame_0="y:-50px;tp:600;"
-                                                                                                                                                                                                               data-frame_1="tp:600;e:none;st:1000;sp:800;sR:1000;"
-                                                                                                                                                                                                               data-frame_999="o:0;tp:600;e:nothing;st:w;sR:7200;"
-                                                                                                                                                                                                               style="z-index:6;font-family:'Ubuntu';text-transform:uppercase;letter-spacing:2px;">Creative
-                            Interior Design </rs-layer><!----><rs-layer id="slider-13-slide-37-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                                        data-xy="x:c;y:m;" data-dim="w:15px;h:15px;" data-vbility="t,t,f,f"
-                                                                        data-border="bos:solid;boc:rgba(229, 174, 73, 1);bow:3,3,3,3;bor:7px,7px,7px,7px;"
-                                                                        data-frame_0="tp:600;" data-frame_1="tp:600;e:none;st:2000;sR:2000;"
-                                                                        data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6700;" style="z-index:7;">
-                        </rs-layer><!----><rs-layer id="slider-13-slide-37-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                    data-xy="xo:637px,543px,420px,420px;y:m;" data-dim="w:300px;h:1px;"
-                                                    data-vbility="t,t,f,f" data-frame_0="x:50px;tp:600;"
-                                                    data-frame_1="tp:600;e:none;st:2300;sp:500;sR:2300;"
-                                                    data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6200;"
-                                                    style="z-index:8;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-37-layer-5" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on"
-                                                                                                                                         data-xy="xo:303px,192px,71px,71px;y:m;" data-dim="w:300px;h:1px;"
-                                                                                                                                         data-vbility="t,t,f,f" data-frame_0="x:-50px;tp:600;"
-                                                                                                                                         data-frame_1="tp:600;e:none;st:2300;sp:500;sR:2300;"
-                                                                                                                                         data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6200;"
-                                                                                                                                         style="z-index:9;background-color:rgba(255,255,255,1);"> </rs-layer><!----><rs-layer id="slider-13-slide-37-layer-7" data-type="text" data-color="rgba(255, 255, 255, 1)" data-rsp_ch="on"
-                                                                                                                                                                                                                              data-xy="x:c;xo:1px,1px,0,0;y:m,t,t,m;yo:42px,384px,489px,-1px;"
-                                                                                                                                                                                                                              data-text="s:50,50,30,18;l:80,80,40,40;fw:700;" data-frame_0="tp:600;"
-                                                                                                                                                                                                                              data-frame_1="tp:600;e:none;st:2900;sp:800;sR:2900;"
-                                                                                                                                                                                                                              data-frame_999="o:0;tp:600;e:nothing;st:w;sR:5300;"
-                                                                                                                                                                                                                              style="z-index:10;font-family:'Ubuntu';text-transform:uppercase;letter-spacing:2px;">architecture
-                            studio
-                        </rs-layer><!---->
-                    </rs-slide>
-                </rs-slides>
-            </rs-module>
-            <script> setREVStartSize({ c: 'rev_slider_13_1', rl: [1240, 1024, 778, 480], el: [745, 600, 960, 500], gw: [1240, 1024, 778, 480], gh: [745, 600, 960, 500], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" }); if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider131"] !== undefined) { window.RS_MODULES.modules["revslider131"].once = false; window.revapi13 = undefined; if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal() } </script>
-        </rs-module-wrap> <!-- END REVOLUTION SLIDER -->
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+    <!--hero section start-->
+    <section class="hero-section ptb-120 d-flex align-items-center justify-content-center overflow-hidden" data-background="{{ url('/assets') }}/images/bg/hero-bg.jpg">
+        <div class="container position-relative">
+            <div class="hero-vertical-slider">
+                @forelse(slider() as $slide)
+                    <div class="single-item">
+                        <img src="{{ url('/storage/' . $slide->image) }}" alt="not found" class="img-fluid" />
+                    </div>
+                @empty
+                    <p>Not Found</p>
+                @endforelse
+            </div>
+            <div class="hero-main-slider">
+                @forelse(slider() as $slide)
+                    <div class="hero-single-slide">
+                        <div class="row g-5 align-items-center justify-content-between">
+                            <div class="col-xl-6 col-lg-9">
+                                <div class="hero-content-wrapper">
+                                    <h1 class="hero-title mb-40">{{ $slide->name }}</h1>
+                                    <a href="#" class="template-btn white-btn">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-9">
+                                <div class="hero-images text-end position-relative">
+                                    <img src="{{ url('/storage/' . $slide->image ) }}" alt="not found" class="img-fluid position-absolute start-0 bottom-0 image-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @empty
+                    <p>Not Found</p>
+                @endforelse
+            </div>
+        </div>
+    </section>
+    <!--hero section end-->
 
 
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1505304480577">
+    <!--collection section start-->
+    <section class="collection-section ptb-140">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="section-title">
+                        <h2 class="mb-0">Layihələr</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-nav vr-filter-btns mt-40">
+                <button data-filter="*" class="active">Chair</button>
+                <button data-filter=".sofa">Sofas</button>
+                <button data-filter=".stools">Poufs & Stools</button>
+                <button data-filter=".tables">Tables</button>
+                <button data-filter=".storage">Storage</button>
+                <button data-filter=".rugs">Rugs</button>
+            </div>
+
+            <div class="row grid_1 g-4">
+                <div class="col-xl-5 col-lg-6 stools tables rugs">
+                    <div class="vr-product-card wow fadeInUp">
+                        <div class="feature-thumb position-relative">
+                            <a href="product-details.html">
+                                <img src="{{ url('/assets') }}/images/products/table.png" alt="thumbnail" class="feature-thumbnail thumb" />
+                                <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thumbnail" class="feature-thumbnail thumb-hover" />
+                            </a>
+                            <span class="circle-badge primary">HOT</span>
+                            <div class="action-box primary-bg-color">
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Cart</span>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6093 5C13.6093 2.79086 11.8185 1 9.60933 1C7.40019 1 5.60933 2.79086 5.60933 5M17.0546 7.67395L17.988 13.274C18.2016 14.5559 18.3087 15.1968 18.1232 15.6964C17.9604 16.1347 17.6493 16.5022 17.2437 16.7349C16.7814 17 16.1313 17 14.8317 17H4.38667C3.08705 17 2.43778 17 1.97554 16.7349C1.56991 16.5022 1.25815 16.1347 1.09533 15.6964C0.909784 15.1968 1.01677 14.5559 1.23042 13.274L2.16376 7.67395C2.32209 6.72398 2.40151 6.24902 2.63854 5.89258C2.84748 5.57838 3.14103 5.32965 3.48531 5.17521C3.87586 5 4.35719 5 5.32027 5H13.8987C14.8617 5 15.343 5 15.7336 5.17521C16.0778 5.32965 16.3711 5.57838 16.58 5.89258C16.8171 6.24902 16.8963 6.72399 17.0546 7.67395Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#product_view" data-bs-toggle="modal">
+                                    <span class="tooltip-text">Quick View</span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8712 11.7359L16.31 15.1739L15.1739 16.31L11.7359 12.8712C10.4567 13.8967 8.86556 14.4544 7.22605 14.4521C3.23727 14.4521 0 11.2148 0 7.22605C0 3.23727 3.23727 0 7.22605 0C11.2148 0 14.4521 3.23727 14.4521 7.22605C14.4544 8.86556 13.8967 10.4567 12.8712 11.7359ZM11.2606 11.1402C12.2796 10.0923 12.8486 8.68766 12.8463 7.22605C12.8463 4.12045 10.3308 1.60579 7.22605 1.60579C4.12045 1.60579 1.60579 4.12045 1.60579 7.22605C1.60579 10.3308 4.12045 12.8463 7.22605 12.8463C8.68766 12.8486 10.0923 12.2796 11.1402 11.2606L11.2606 11.1402Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Wishlist</span>
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.65655 1.32344C10.6898 -0.502047 13.8318 -0.441457 15.7906 1.52078C17.7485 3.48389 17.816 6.61032 15.9948 8.6496L8.65481 16L1.31653 8.6496C-0.504621 6.61032 -0.436241 3.4787 1.52081 1.52078C3.48132 -0.43886 6.61727 -0.504643 8.65655 1.32344ZM14.5649 2.74383C13.2666 1.44375 11.1719 1.39095 9.81294 2.6114L8.65741 3.64835L7.50101 2.61227C6.13774 1.39008 4.0474 1.44375 2.74559 2.74556C1.45589 4.03526 1.39097 6.09964 2.5794 7.46377L8.65568 13.5496L14.732 7.46464C15.9213 6.09964 15.8563 4.03786 14.5649 2.74383Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-bottom mt-30 d-flex align-items-center justify-content-between gap-4">
+                            <div>
+                                <a href="product-details.html"><h5 class="mb-3">Natural Smart Chair</h5></a>
+                                <span class="fw-medium text-main-color">$256.39</span>
+                            </div>
+                            <ul class="rating-star d-inline-flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 sofa tables">
+                    <div class="vr-product-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-thumb position-relative">
+                            <div class="vr-thumbnail-control-slider" id="vr_thumbnail_control_slider1">
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-1.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-2.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-3.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-4.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="thumbnail-slider-wrapper d-block">
+                                <div class="vr-thumbnail-slider" id="vr_thumbnail_slider1">
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd-hover.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd-hover.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd-hover.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd-hover.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-box primary-bg-color">
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Cart</span>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6093 5C13.6093 2.79086 11.8185 1 9.60933 1C7.40019 1 5.60933 2.79086 5.60933 5M17.0546 7.67395L17.988 13.274C18.2016 14.5559 18.3087 15.1968 18.1232 15.6964C17.9604 16.1347 17.6493 16.5022 17.2437 16.7349C16.7814 17 16.1313 17 14.8317 17H4.38667C3.08705 17 2.43778 17 1.97554 16.7349C1.56991 16.5022 1.25815 16.1347 1.09533 15.6964C0.909784 15.1968 1.01677 14.5559 1.23042 13.274L2.16376 7.67395C2.32209 6.72398 2.40151 6.24902 2.63854 5.89258C2.84748 5.57838 3.14103 5.32965 3.48531 5.17521C3.87586 5 4.35719 5 5.32027 5H13.8987C14.8617 5 15.343 5 15.7336 5.17521C16.0778 5.32965 16.3711 5.57838 16.58 5.89258C16.8171 6.24902 16.8963 6.72399 17.0546 7.67395Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#product_view" data-bs-toggle="modal">
+                                    <span class="tooltip-text">Quick View</span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8712 11.7359L16.31 15.1739L15.1739 16.31L11.7359 12.8712C10.4567 13.8967 8.86556 14.4544 7.22605 14.4521C3.23727 14.4521 0 11.2148 0 7.22605C0 3.23727 3.23727 0 7.22605 0C11.2148 0 14.4521 3.23727 14.4521 7.22605C14.4544 8.86556 13.8967 10.4567 12.8712 11.7359ZM11.2606 11.1402C12.2796 10.0923 12.8486 8.68766 12.8463 7.22605C12.8463 4.12045 10.3308 1.60579 7.22605 1.60579C4.12045 1.60579 1.60579 4.12045 1.60579 7.22605C1.60579 10.3308 4.12045 12.8463 7.22605 12.8463C8.68766 12.8486 10.0923 12.2796 11.1402 11.2606L11.2606 11.1402Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Wishlist</span>
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.65655 1.32344C10.6898 -0.502047 13.8318 -0.441457 15.7906 1.52078C17.7485 3.48389 17.816 6.61032 15.9948 8.6496L8.65481 16L1.31653 8.6496C-0.504621 6.61032 -0.436241 3.4787 1.52081 1.52078C3.48132 -0.43886 6.61727 -0.504643 8.65655 1.32344ZM14.5649 2.74383C13.2666 1.44375 11.1719 1.39095 9.81294 2.6114L8.65741 3.64835L7.50101 2.61227C6.13774 1.39008 4.0474 1.44375 2.74559 2.74556C1.45589 4.03526 1.39097 6.09964 2.5794 7.46377L8.65568 13.5496L14.732 7.46464C15.9213 6.09964 15.8563 4.03786 14.5649 2.74383Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="circle-badge primary">HOT</span>
+                            <span class="circle-badge danger mt-60">-25%</span>
+                        </div>
+                        <div class="card-bottom mt-30 d-flex align-items-center justify-content-between gap-4">
+                            <div>
+                                <a href="product-details.html"><h5 class="mb-3">Natural Wood Smart Chair</h5></a>
+                                <del class="me-2">$256.39</del>
+                                <span class="fw-medium text-main-color">$256.39</span>
+                            </div>
+                            <ul class="rating-star d-inline-flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 stools storage sofa">
+                    <div class="vr-product-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-thumb position-relative">
+                            <a href="product-details.html">
+                                <img src="{{ url('/assets') }}/images/products/weardrobe.png" alt="thumbnail" class="feature-thumbnail thumb" />
+                                <img src="{{ url('/assets') }}/images/products/weardrobe-hover.png" alt="thumbnail" class="feature-thumbnail thumb-hover" />
+                            </a>
+                            <span class="circle-badge sale">Sale</span>
+                            <div class="action-box primary-bg-color">
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Cart</span>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6093 5C13.6093 2.79086 11.8185 1 9.60933 1C7.40019 1 5.60933 2.79086 5.60933 5M17.0546 7.67395L17.988 13.274C18.2016 14.5559 18.3087 15.1968 18.1232 15.6964C17.9604 16.1347 17.6493 16.5022 17.2437 16.7349C16.7814 17 16.1313 17 14.8317 17H4.38667C3.08705 17 2.43778 17 1.97554 16.7349C1.56991 16.5022 1.25815 16.1347 1.09533 15.6964C0.909784 15.1968 1.01677 14.5559 1.23042 13.274L2.16376 7.67395C2.32209 6.72398 2.40151 6.24902 2.63854 5.89258C2.84748 5.57838 3.14103 5.32965 3.48531 5.17521C3.87586 5 4.35719 5 5.32027 5H13.8987C14.8617 5 15.343 5 15.7336 5.17521C16.0778 5.32965 16.3711 5.57838 16.58 5.89258C16.8171 6.24902 16.8963 6.72399 17.0546 7.67395Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#product_view" data-bs-toggle="modal">
+                                    <span class="tooltip-text">Quick View</span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8712 11.7359L16.31 15.1739L15.1739 16.31L11.7359 12.8712C10.4567 13.8967 8.86556 14.4544 7.22605 14.4521C3.23727 14.4521 0 11.2148 0 7.22605C0 3.23727 3.23727 0 7.22605 0C11.2148 0 14.4521 3.23727 14.4521 7.22605C14.4544 8.86556 13.8967 10.4567 12.8712 11.7359ZM11.2606 11.1402C12.2796 10.0923 12.8486 8.68766 12.8463 7.22605C12.8463 4.12045 10.3308 1.60579 7.22605 1.60579C4.12045 1.60579 1.60579 4.12045 1.60579 7.22605C1.60579 10.3308 4.12045 12.8463 7.22605 12.8463C8.68766 12.8486 10.0923 12.2796 11.1402 11.2606L11.2606 11.1402Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Wishlist</span>
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.65655 1.32344C10.6898 -0.502047 13.8318 -0.441457 15.7906 1.52078C17.7485 3.48389 17.816 6.61032 15.9948 8.6496L8.65481 16L1.31653 8.6496C-0.504621 6.61032 -0.436241 3.4787 1.52081 1.52078C3.48132 -0.43886 6.61727 -0.504643 8.65655 1.32344ZM14.5649 2.74383C13.2666 1.44375 11.1719 1.39095 9.81294 2.6114L8.65741 3.64835L7.50101 2.61227C6.13774 1.39008 4.0474 1.44375 2.74559 2.74556C1.45589 4.03526 1.39097 6.09964 2.5794 7.46377L8.65568 13.5496L14.732 7.46464C15.9213 6.09964 15.8563 4.03786 14.5649 2.74383Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-bottom mt-30 d-flex align-items-center justify-content-between gap-4">
+                            <div>
+                                <a href="product-details.html"><h5 class="mb-3">Smart Weardrobe</h5></a>
+                                <span class="fw-medium text-main-color">$256.39</span>
+                            </div>
+                            <ul class="rating-star d-inline-flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 storage rugs">
+                    <div class="vr-product-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-thumb position-relative">
+                            <div class="vr-thumbnail-control-slider">
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-1.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                                <div class="single-item">
+                                    <img src="{{ url('/assets') }}/images/products/vr-thumbnail-2.png" alt="thumbnail" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="thumbnail-slider-wrapper d-block">
+                                <div class="vr-thumbnail-slider">
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/sofa.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                    <div class="single-item position-relative">
+                                        <a href="product-details.html">
+                                            <img src="{{ url('/assets') }}/images/products/sofa.png" alt="thubnail" class="img-fluid feature-thumbnail thumb" />
+                                            <img src="{{ url('/assets') }}/images/products/chair-pd.png" alt="thubnail" class="img-fluid feature-thumbnail thumb-hover" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-box primary-bg-color">
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Cart</span>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6093 5C13.6093 2.79086 11.8185 1 9.60933 1C7.40019 1 5.60933 2.79086 5.60933 5M17.0546 7.67395L17.988 13.274C18.2016 14.5559 18.3087 15.1968 18.1232 15.6964C17.9604 16.1347 17.6493 16.5022 17.2437 16.7349C16.7814 17 16.1313 17 14.8317 17H4.38667C3.08705 17 2.43778 17 1.97554 16.7349C1.56991 16.5022 1.25815 16.1347 1.09533 15.6964C0.909784 15.1968 1.01677 14.5559 1.23042 13.274L2.16376 7.67395C2.32209 6.72398 2.40151 6.24902 2.63854 5.89258C2.84748 5.57838 3.14103 5.32965 3.48531 5.17521C3.87586 5 4.35719 5 5.32027 5H13.8987C14.8617 5 15.343 5 15.7336 5.17521C16.0778 5.32965 16.3711 5.57838 16.58 5.89258C16.8171 6.24902 16.8963 6.72399 17.0546 7.67395Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#product_view" data-bs-toggle="modal">
+                                    <span class="tooltip-text">Quick View</span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8712 11.7359L16.31 15.1739L15.1739 16.31L11.7359 12.8712C10.4567 13.8967 8.86556 14.4544 7.22605 14.4521C3.23727 14.4521 0 11.2148 0 7.22605C0 3.23727 3.23727 0 7.22605 0C11.2148 0 14.4521 3.23727 14.4521 7.22605C14.4544 8.86556 13.8967 10.4567 12.8712 11.7359ZM11.2606 11.1402C12.2796 10.0923 12.8486 8.68766 12.8463 7.22605C12.8463 4.12045 10.3308 1.60579 7.22605 1.60579C4.12045 1.60579 1.60579 4.12045 1.60579 7.22605C1.60579 10.3308 4.12045 12.8463 7.22605 12.8463C8.68766 12.8486 10.0923 12.2796 11.1402 11.2606L11.2606 11.1402Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <span class="tooltip-text">Add To Wishlist</span>
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.65655 1.32344C10.6898 -0.502047 13.8318 -0.441457 15.7906 1.52078C17.7485 3.48389 17.816 6.61032 15.9948 8.6496L8.65481 16L1.31653 8.6496C-0.504621 6.61032 -0.436241 3.4787 1.52081 1.52078C3.48132 -0.43886 6.61727 -0.504643 8.65655 1.32344ZM14.5649 2.74383C13.2666 1.44375 11.1719 1.39095 9.81294 2.6114L8.65741 3.64835L7.50101 2.61227C6.13774 1.39008 4.0474 1.44375 2.74559 2.74556C1.45589 4.03526 1.39097 6.09964 2.5794 7.46377L8.65568 13.5496L14.732 7.46464C15.9213 6.09964 15.8563 4.03786 14.5649 2.74383Z" fill="#F8F8F8"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-bottom mt-30 d-flex align-items-center justify-content-between gap-4">
+                            <div>
+                                <a href="product-details.html"><h5 class="mb-3">Natural Wood Smart Chair</h5></a>
+                                <del class="me-2">$256.39</del>
+                                <span class="fw-medium text-main-color">$256.39</span>
+                            </div>
+                            <ul class="rating-star d-inline-flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--collection section end-->
+
+
+    <!--ticker section start-->
+    <div class="ticker-area overflow-hidden">
+        <div class="ticker-wrapper primary-bg-color">
+            <div class="ticker">
+                <span class="text-white text-uppercase">Get 20% Discount on your first product</span>
+                <span class="text-white text-uppercase">DISCOVER LATEST COLLECTIONS AND TOP DESIGNERS </span>
+                <span class="text-white text-uppercase">10% DISCOUNT FOR REGISTERED USERS</span>
+                <span class="text-white text-uppercase">Get 20% Discount on your first product</span>
+                <span class="text-white text-uppercase">DISCOVER LATEST COLLECTIONS AND TOP DESIGNERS</span>
+                <span class="text-white text-uppercase">10% DISCOUNT FOR REGISTERED USERS</span>
+            </div>
+        </div>
+    </div>
+    <!--ticker section end-->
+
+    <!--blog section start-->
+    <section class="blog-section ptb-140">
         <div class="container">
             <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-8 vc_custom_1505304464680">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement-title tz_on_title  tz-title-type-3 tz-text-align-left "> <span
-                                class="tzSubTitle"></span> <span class="tzTitle"> <em>Why</em> Choose Us </span>
-                            <p class="tzDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales et luctus
-                                tellus</p>
-                            <p style="color: red;"></p>
-                        </div>
-                        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1503476923234">
-                            <div class="wpb_column vc_column_container vc_col-sm-6">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="tz_animatable">
-                                            <div class="tzElement_Feature tzFeature_type6 tzFeature_left" style="padding-top:43px;">
-                                                <h5 class="tzFeature_title"> High Skilled Interior Design</h5>
-                                                <p class="tzFeature_description"> Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Morbi non cursus turpis laoreet</p>
-                                            </div>
-                                        </div>
-                                        <div class="tz_animatable">
-                                            <div class="tzElement_Feature tzFeature_type6 tzFeature_left" style="padding-top:43px;">
-                                                <h5 class="tzFeature_title"> Full Pro Service</h5>
-                                                <p class="tzFeature_description"> Pellentesque rutrum odio est, eu
-                                                    volutpat ante sodales vel. Nullam in mauris nec tellus</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-6">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="tz_animatable">
-                                            <div class="tzElement_Feature tzFeature_type6 tzFeature_left" style="padding-top:43px;">
-                                                <h5 class="tzFeature_title"> Over 500 Sastified Clients</h5>
-                                                <p class="tzFeature_description"> Class aptent taciti sociosqu ad
-                                                    litora torquent per conubia nostra, per inceptos himenaeos
-                                                    Quisque</p>
-                                            </div>
-                                        </div>
-                                        <div class="tz_animatable">
-                                            <div class="tzElement_Feature tzFeature_type6 tzFeature_left" style="padding-top:43px;">
-                                                <h5 class="tzFeature_title"> Support 24/7</h5>
-                                                <p class="tzFeature_description"> Sed ut perspiciatis unde omnis
-                                                    iste natus error sit voluptatem accusantium doloremque</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container vc_col-sm-4 vc_custom_1505304472672">
-                    <div class="wpb_wrapper">
-                        <div class="wpb_single_image wpb_content_element vc_align_left wpb_content_element">
-                            <figure class="wpb_wrapper vc_figure">
-                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img decoding="async"
-                                                                                               width="420" height="620" src="{{ url('/') }}/wp-content/uploads/2017/08/image1.png"
-                                                                                               class="vc_single_image-img attachment-full" alt="" title="image1"
-                                                                                               sizes="(max-width: 420px) 100vw, 420px" /></div>
-                            </figure>
-                        </div>
+                <div class="col-xl-4">
+                    <div class="section-title">
+                        <h2 class="mb-32">Our Journal</h2>
+                        <p class="lead fw-normal mb-70">Casual line. Short Design. 100% Seude Comfort Backsitted Elbow Patches</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1503548498137 vc_row-has-fill">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement-title tz_on_title  tz-title-type-3 tz-text-align-center "> <span
-                                class="tzSubTitle"></span> <span class="tzTitle"> <em>Featured</em> Works </span>
-                            <p class="tzDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                            <p style="color: red;"></p>
+            <div class="row justify-content-center g-4">
+                <div class="col-xl-4 col-md-6">
+                    <article class="blog-card wow fadeInUp">
+                        <div class="feature-image overflow-hidden">
+                            <a href="blog-single.html"><img src="{{ url('/assets') }}/images/blog/blog-1.jpg" alt="feature img" class="img-fluid" /></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1503548547941 vc_row-has-fill">
-        <div class="no_container">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div
-                        class="tzElement_Portfolio  tzElement_Portfolio_grid tzElement_Portfolio_grid  tzElement_portfolio_style_modern tzElement_portfolio_color_type_light ">
-                        <div
-                            class="tzPortfolio_Grid  desk_4_column tabletportrait_2_column mobilelandscape_2_column mobileportrait_1_column">
-                            <div class="tzfilter" data-option-key="filter">
-                                <div class="tzFillter_box"> <a href="#show-all" data-option-value="*"
-                                                               class="selected">Show all</a> <a class="TZHide" id="interiart-bathrooms"
-                                                                                                href="#" data-option-value=".interiart-bathrooms">Bathrooms</a> <a
-                                        class="TZHide" id="interiart-bedrooms" href="#"
-                                        data-option-value=".interiart-bedrooms">Bedrooms</a> <a class="TZHide"
-                                                                                                id="interiart-commercial" href="#"
-                                                                                                data-option-value=".interiart-commercial">Commercial</a> <a class="TZHide"
-                                                                                                                                                            id="interiart-hospitaly" href="#"
-                                                                                                                                                            data-option-value=".interiart-hospitaly">Hospitaly</a> <a class="TZHide"
-                                                                                                                                                                                                                      id="interiart-kitchens" href="#"
-                                                                                                                                                                                                                      data-option-value=".interiart-kitchens">Kitchens</a> <a class="TZHide"
-                                                                                                                                                                                                                                                                              id="interiart-living-room" href="#"
-                                                                                                                                                                                                                                                                              data-option-value=".interiart-living-room">living room</a> <a class="TZHide"
-                                                                                                                                                                                                                                                                                                                                            id="interiart-office" href="#"
-                                                                                                                                                                                                                                                                                                                                            data-option-value=".interiart-office">Office</a> <a class="TZHide"
-                                                                                                                                                                                                                                                                                                                                                                                                id="interiart-offices" href="#"
-                                                                                                                                                                                                                                                                                                                                                                                                data-option-value=".interiart-offices">Offices</a> <a class="TZHide"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      id="interiart-residential" href="#"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      data-option-value=".interiart-residential">Residential</a></div>
-                            </div><!--tzfilter-->
-                            <div class="tzPortfolioGrid_Content">
-                                <div id="post-747"
-                                     class="tzPortfolioGrid-item interiart-bathrooms interiart-bedrooms interiart-kitchens  post-747 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-bathrooms portfolio-category-bedrooms portfolio-category-kitchens">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="768" height="1024"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/09/portfolio-768x1024.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/09/portfolio-768x1024.jpg 768w, https://interiart.templaza.net/wp-content/uploads/2015/09/portfolio-600x800.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/09/portfolio-225x300.jpg 225w, https://interiart.templaza.net/wp-content/uploads/2015/09/portfolio.jpg 1125w"
-                                                                        sizes="(max-width: 768px) 100vw, 768px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/bridge-street-residence-2/index.html"
-                                                           data-effect="mfp-zoom-in">Bridge Street Residence</a>
-                                                    </h3> <span class="tzcat"> <a
-                                                            href="../portfolio-category/bathrooms/index.html"
-                                                            rel="tag">Bathrooms</a>,<a
-                                                            href="../portfolio-category/bedrooms/index.html"
-                                                            rel="tag">Bedrooms</a>,<a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-737"
-                                     class="tzPortfolioGrid-item interiart-bedrooms interiart-kitchens  post-737 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-bedrooms portfolio-category-kitchens">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="768" height="1024"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-768x1024.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-768x1024.jpg 768w, https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-600x800.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-225x300.jpg 225w, https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583-1152x1536.jpg 1152w, https://interiart.templaza.net/wp-content/uploads/2015/09/d8a94731088097.5640da4521583.jpg 1200w"
-                                                                        sizes="(max-width: 768px) 100vw, 768px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/woodland-road-west/index.html"
-                                                           data-effect="mfp-zoom-in">Woodland Road West</a></h3>
-                                                    <span class="tzcat"> <a
-                                                            href="../portfolio-category/bedrooms/index.html"
-                                                            rel="tag">Bedrooms</a>,<a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-487"
-                                     class="tzPortfolioGrid-item interiart-kitchens interiart-living-room tz_feature_item post-487 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-kitchens portfolio-category-living-room portfolio-tags-residence">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="600" height="900"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/08/64384c17547151.562bb72f0af5b.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/08/64384c17547151.562bb72f0af5b.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/08/64384c17547151.562bb72f0af5b-200x300.jpg 200w"
-                                                                        sizes="(max-width: 600px) 100vw, 600px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/bridge-street-residence/index.html"
-                                                           data-effect="mfp-zoom-in">Bridge Street Residence</a>
-                                                    </h3> <span class="tzcat"> <a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a>,<a
-                                                            href="../portfolio-category/living-room/index.html"
-                                                            rel="tag">living room</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-484"
-                                     class="tzPortfolioGrid-item interiart-bedrooms interiart-kitchens interiart-living-room  post-484 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-bedrooms portfolio-category-kitchens portfolio-category-living-room">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="600" height="898"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/08/b9164317547151.562bb5c58cd39.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/08/b9164317547151.562bb5c58cd39.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/08/b9164317547151.562bb5c58cd39-200x300.jpg 200w"
-                                                                        sizes="(max-width: 600px) 100vw, 600px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/shadywood-road-residence/index.html"
-                                                           data-effect="mfp-zoom-in">Shadywood Road Residence</a>
-                                                    </h3> <span class="tzcat"> <a
-                                                            href="../portfolio-category/bedrooms/index.html"
-                                                            rel="tag">Bedrooms</a>,<a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a>,<a
-                                                            href="../portfolio-category/living-room/index.html"
-                                                            rel="tag">living room</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-91"
-                                     class="tzPortfolioGrid-item interiart-bedrooms interiart-kitchens interiart-offices  post-91 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-bedrooms portfolio-category-kitchens portfolio-category-offices portfolio-tags-donec portfolio-tags-vestibulum">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="819" height="1024"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-819x1024.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-819x1024.jpg 819w, https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-600x750.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-240x300.jpg 240w, https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-768x960.jpg 768w, https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa-1229x1536.jpg 1229w, https://interiart.templaza.net/wp-content/uploads/2015/07/f55ff328777967.55d21854df0fa.jpg 1400w"
-                                                                        sizes="(max-width: 819px) 100vw, 819px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/woodlawn-blvd/index.html"
-                                                           data-effect="mfp-zoom-in">Woodlawn Blvd</a></h3> <span
-                                                        class="tzcat"> <a
-                                                            href="../portfolio-category/bedrooms/index.html"
-                                                            rel="tag">Bedrooms</a>,<a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a>,<a
-                                                            href="../portfolio-category/offices/index.html"
-                                                            rel="tag">Offices</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-83"
-                                     class="tzPortfolioGrid-item interiart-bathrooms interiart-kitchens  post-83 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-bathrooms portfolio-category-kitchens portfolio-tags-maecenas portfolio-tags-morbi">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="1024" height="681"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-1024x681.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-1024x681.jpg 1024w, https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-600x399.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-300x199.jpg 300w, https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1-768x511.jpg 768w, https://interiart.templaza.net/wp-content/uploads/2015/07/16046392691_83a8aac479_o1.jpg 1140w"
-                                                                        sizes="(max-width: 1024px) 100vw, 1024px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/new-french-country/index.html"
-                                                           data-effect="mfp-zoom-in">New French Country</a></h3>
-                                                    <span class="tzcat"> <a
-                                                            href="../portfolio-category/bathrooms/index.html"
-                                                            rel="tag">Bathrooms</a>,<a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="post-81"
-                                     class="tzPortfolioGrid-item interiart-kitchens interiart-offices  post-81 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio-category-kitchens portfolio-category-offices portfolio-tags-etiam portfolio-tags-vestibulum">
-                                    <div class="tz-inner">
-                                        <div class="tzPortfolioBox 2222">
-                                            <div class="item-img"> <img decoding="async" width="556" height="818"
-                                                                        src="{{ url('/') }}/wp-content/uploads/2015/07/6734902133_42bd00fa52_o1.jpg"
-                                                                        class="attachment-large size-large wp-post-image" alt=""
-                                                                        srcset="https://interiart.templaza.net/wp-content/uploads/2015/07/6734902133_42bd00fa52_o1.jpg 556w, https://interiart.templaza.net/wp-content/uploads/2015/07/6734902133_42bd00fa52_o1-204x300.jpg 204w"
-                                                                        sizes="(max-width: 556px) 100vw, 556px" /></div>
-                                            <div class="tzPortfolio_hover">
-                                                <div class="tzPortfolio_hover_overlay"></div>
-                                                <!--<div class="tzPortfolio_hover_overlay"><a class="simple-ajax-popup-align-top" href="-->
-                                                <!--" data-effect="mfp-zoom-in"></a></div>-->
-                                                <div class="tzPortfolio_hover_info">
-                                                    <h3><a class=" simple-ajax-popup-align-top-title"
-                                                           href="../portfolio/drexel-avenue-residence/index.html"
-                                                           data-effect="mfp-zoom-in">Drexel Avenue Residence</a>
-                                                    </h3> <span class="tzcat"> <a
-                                                            href="../portfolio-category/kitchens/index.html"
-                                                            rel="tag">Kitchens</a>,<a
-                                                            href="../portfolio-category/offices/index.html"
-                                                            rel="tag">Offices</a> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--end class tzPortfolio-->
-                            <div class="tz-custom-link"> <a
-                                    href="http://wordpress.templaza.net/interiart/portfolios/"> More Project </a>
-                            </div>
-                            <div id="loadajax" style="display: none;"></div>
-                        </div><!--end class tzPortfolio_Grid--> <!--end script recent-work-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1504836320275">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement-title tz_on_title  tz-title-type-3 tz-text-align-center "> <span
-                                class="tzSubTitle"></span> <span class="tzTitle"> <em>Recent</em> News </span>
-                            <p class="tzDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                            <p style="color: red;"></p>
+                        <div class="blog-meta mt-30 mb-30 d-flex align-items-center gap-30">
+                            <span class="fw-medium"><i class="fa-regular fa-user me-2"></i>Author</span>
+                            <span class="fw-medium"><i class="fa-regular fa-calendar me-2"></i>15 Jan, 2023</span>
                         </div>
-                    </div>
+                        <a href="blog-single.html" class="blog-title"><h5 class="mb-40 fw-semibold">Special edition boots campaign year end sale for you</h5></a>
+                        <a href="blog-single.html" class="explore-btn">Read Details</a>
+                    </article>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1504836535578">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement-recent-post tzRecent-post-type-1 tz_align_left  ">
-                            <div class="col-md-4">
-                                <div class="tz-recent-inner tz_animatable tz-recent-inner-1"> <img decoding="async"
-                                                                                                   width="877" height="640" src="{{ url('/') }}/wp-content/uploads/2019/09/post_r3.jpg"
-                                                                                                   class="attachment-large size-large wp-post-image" alt=""
-                                                                                                   srcset="https://interiart.templaza.net/wp-content/uploads/2019/09/post_r3.jpg 877w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r3-600x438.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r3-300x219.jpg 300w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r3-768x560.jpg 768w"
-                                                                                                   sizes="(max-width: 877px) 100vw, 877px" />
-                                    <div class="tz-recent-meta"> <span> <i class="fa fa-calendar"></i> September 30,
-                                                2019 </span> <span> <small>/</small> <i class="far fa-comment"
-                                                                                        aria-hidden="true"></i> 0 Comment </span> <span> <small>/</small> <i
-                                                class="far fa-heart"></i> 1643 Views </span></div>
-                                    <h3 class="tz-recent-title"> <a
-                                            href="../gift-ideas-for-art-nature-lovers/index.html">Gift Ideas For Art
-                                            & Nature Lovers</a></h3>
-                                    <p class="tz-recent-description"> Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt...</p> <a
-                                        class="tz-recent-readmore"
-                                        href="../gift-ideas-for-art-nature-lovers/index.html">read more</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tz-recent-inner tz_animatable tz-recent-inner-2"> <img decoding="async"
-                                                                                                   width="877" height="640" src="{{ url('/') }}/wp-content/uploads/2019/09/post_r2.jpg"
-                                                                                                   class="attachment-large size-large wp-post-image" alt=""
-                                                                                                   srcset="https://interiart.templaza.net/wp-content/uploads/2019/09/post_r2.jpg 877w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r2-600x438.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r2-300x219.jpg 300w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r2-768x560.jpg 768w"
-                                                                                                   sizes="(max-width: 877px) 100vw, 877px" />
-                                    <div class="tz-recent-meta"> <span> <i class="fa fa-calendar"></i> September 30,
-                                                2019 </span> <span> <small>/</small> <i class="far fa-comment"
-                                                                                        aria-hidden="true"></i> 0 Comment </span> <span> <small>/</small> <i
-                                                class="far fa-heart"></i> 1857 Views </span></div>
-                                    <h3 class="tz-recent-title"> <a
-                                            href="../better-dreams-with-box-spring-beds-2/index.html">Kitchen
-                                            Inspiration With Reform</a></h3>
-                                    <p class="tz-recent-description"> Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt...</p> <a
-                                        class="tz-recent-readmore"
-                                        href="../better-dreams-with-box-spring-beds-2/index.html">read more</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tz-recent-inner tz_animatable tz-recent-inner-3"> <img decoding="async"
-                                                                                                   width="877" height="640" src="{{ url('/') }}/wp-content/uploads/2019/09/post_r1.jpg"
-                                                                                                   class="attachment-large size-large wp-post-image" alt=""
-                                                                                                   srcset="https://interiart.templaza.net/wp-content/uploads/2019/09/post_r1.jpg 877w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r1-600x438.jpg 600w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r1-300x219.jpg 300w, https://interiart.templaza.net/wp-content/uploads/2019/09/post_r1-768x560.jpg 768w"
-                                                                                                   sizes="(max-width: 877px) 100vw, 877px" />
-                                    <div class="tz-recent-meta"> <span> <i class="fa fa-calendar"></i> September 30,
-                                                2019 </span> <span> <small>/</small> <i class="far fa-comment"
-                                                                                        aria-hidden="true"></i> 0 Comment </span> <span> <small>/</small> <i
-                                                class="far fa-heart"></i> 1401 Views </span></div>
-                                    <h3 class="tz-recent-title"> <a
-                                            href="../better-dreams-with-box-spring-beds/index.html">Better Dreams
-                                            With Box-Spring</a></h3>
-                                    <p class="tz-recent-description"> Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt...</p> <a
-                                        class="tz-recent-readmore"
-                                        href="../better-dreams-with-box-spring-beds/index.html">read more</a>
-                                </div>
-                            </div>
+                <div class="col-xl-4 col-md-6">
+                    <article class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-image overflow-hidden">
+                            <a href="blog-single.html"><img src="{{ url('/assets') }}/images/blog/blog-2.jpg" alt="feature img" class="img-fluid" /></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1504775652768 vc_row-has-fill">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement-title tz_on_title  tz-title-type-3 tz-text-align-center "> <span
-                                class="tzSubTitle"></span> <span class="tzTitle"> <em>Contact</em> Us </span>
-                            <p class="tzDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales et, luctus
-                                ut tellus. Sed faucibus eleifend metus vel rutrum</p>
-                            <p style="color: red;"></p>
+                        <div class="blog-meta mt-30 mb-30 d-flex align-items-center gap-30">
+                            <span class="fw-medium"><i class="fa-regular fa-user me-2"></i>Author</span>
+                            <span class="fw-medium"><i class="fa-regular fa-calendar me-2"></i>15 Jan, 2023</span>
                         </div>
-                    </div>
+                        <a href="blog-single.html" class="blog-title"><h5 class="mb-40 fw-semibold">Special edition boots campaign year end sale for you</h5></a>
+                        <a href="blog-single.html" class="explore-btn">Read Details</a>
+                    </article>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1504775146700">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div
-                            class="vc_row wpb_row vc_inner vc_row-fluid contact-box-shadow vc_custom_1504772818612 vc_row-has-fill">
-                            <div class="wpb_column vc_column_container vc_col-sm-4">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="tzElement_Contact  ">
-                                            <div class="contact-image"> <img decoding="async" width="64" height="42"
-                                                                             src="{{ url('/') }}/wp-content/uploads/2016/10/Mail.png"
-                                                                             alt="info@temPlaza.com" /></div>
-                                            <div class="contact-title" style="color:#222222"> Email</div>
-                                            <div class="contact-info" style="color:#666666"> info@temPlaza.com</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-4">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="tzElement_Contact  ">
-                                            <div class="contact-image"> <img decoding="async" width="45" height="78"
-                                                                             src="{{ url('/') }}/wp-content/uploads/2016/10/Call.png"
-                                                                             alt="+44 40 887 3432-40" /></div>
-                                            <div class="contact-title" style="color:#222222"> Phone</div>
-                                            <div class="contact-info" style="color:#666666"> +44 40 887 3432-40
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-4">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="tzElement_Contact  ">
-                                            <div class="contact-image"> <img decoding="async" width="77" height="62"
-                                                                             src="{{ url('/') }}/wp-content/uploads/2016/10/My-Location.png"
-                                                                             alt="New York, USA" /></div>
-                                            <div class="contact-title" style="color:#222222"> Address</div>
-                                            <div class="contact-info" style="color:#666666"> New York, USA</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-xl-4 col-md-6">
+                    <article class="blog-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-image overflow-hidden">
+                            <a href="blog-single.html"><img src="{{ url('/assets') }}/images/blog/blog-3.jpg" alt="feature img" class="img-fluid" /></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1504775330152 vc_row-has-fill">
-        <div class="container">
-            <div class="row">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="wpb_wrapper">
-                        <div class="tzElement_Image_slide slide-type-1 ">
-                            <div class="image-slider owl-carousel">
-                                <div class="tzImage_Slide_Item">
-                                    <img decoding="async" width="270" height="180"
-                                         src="{{ url('/') }}/wp-content/uploads/2015/12/partner4.jpg" class="attachment-full"
-                                         alt="" title="partner4" />
-                                </div>
-                            </div>
+                        <div class="blog-meta mt-30 mb-30 d-flex align-items-center gap-30">
+                            <span class="fw-medium"><i class="fa-regular fa-user me-2"></i>Author</span>
+                            <span class="fw-medium"><i class="fa-regular fa-calendar me-2"></i>15 Jan, 2023</span>
                         </div>
-                    </div>
+                        <a href="blog-single.html" class="blog-title"><h5 class="mb-40 fw-semibold">Special edition boots campaign year end sale for you</h5></a>
+                        <a href="blog-single.html" class="explore-btn">Read Details</a>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-
-    </div>
-
-    @include('Frontend.layouts.includes.footer')
+    </section>
+    <!--blog section end-->
 @endsection

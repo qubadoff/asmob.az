@@ -10,4 +10,9 @@ class GeneralController extends Controller
     {
         return view('Frontend.index');
     }
+
+    public function contact(): View
+    {
+        return \view('Frontend.contact');
+    }
 }
