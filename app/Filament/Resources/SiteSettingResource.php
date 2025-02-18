@@ -24,6 +24,10 @@ class SiteSettingResource extends Resource
             ->schema([
                 Section::make([
                     TextInput::make('name')->required(),
+                    TextInput::make('email')->required(),
+                    TextInput::make('phone')->required(),
+                    TextInput::make('location')->required(),
+                    TextInput::make('map')->required(),
                     FileUpload::make('logo')->image()->required(),
                 ])
             ]);
@@ -35,6 +39,9 @@ class SiteSettingResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
                 Tables\Columns\TextColumn::make('name')->searchable(),
+                Tables\Columns\TextColumn::make('email')->searchable(),
+                Tables\Columns\TextColumn::make('phone')->searchable(),
+                Tables\Columns\TextColumn::make('location')->searchable(),
                 Tables\Columns\ImageColumn::make('logo')
             ])
             ->filters([

@@ -14,9 +14,10 @@
                     <nav class="header-navigation text-center text-xl-start">
                         <ul>
                             <li>
-                                <a href="{{ route("index") }}">Home</a>
+                                <a href="{{ route("index") }}">Ana səhifə</a>
                             </li>
-                            <li><a href="{{ route("contact") }}">Contact</a></li>
+                            <li><a href="{{ route("ourProjects") }}">Layihələrimiz</a></li>
+                            <li><a href="{{ route("contact") }}">Bizimlə əlaqə</a></li>
                         </ul>
                     </nav>
                 </div>
