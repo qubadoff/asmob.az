@@ -35,7 +35,7 @@
             </div>
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                 <div class="footer-widget footer-contact-widget">
-                    <h6 class="widget-title text-uppercase mb-30">Əlaqə"</h6>
+                    <h6 class="widget-title text-uppercase mb-30">Əlaqə</h6>
                     <ul class="footer-address">
                         <li><a href="tel:{{ siteSetting()->phone }}">{{ siteSetting()->phone }}</a></li>
                         <li><a href="mailto:{{ siteSetting()->email }}">{{ siteSetting()->email }}</a></li>
