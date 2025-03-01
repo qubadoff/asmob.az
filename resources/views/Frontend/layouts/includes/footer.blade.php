@@ -1,20 +1,4 @@
 <footer style="width: 100%; height: 97vh">
-    <div
-        class="footer_top"
-        style="
-          display: flex;
-          justify-content: center;
-          padding-top: 90px;
-          padding-bottom: 55px;
-          width: 100%;
-          height: 82vh;
-          background-image: url('assets/images/background_process-1.jpg');
-          background-repeat: no-repeat;
-          background-position-x: 50%;
-          background-position-y: 0px;
-          background-size: cover;
-        "
-    >
         <div
             class="width_full"
             style="
