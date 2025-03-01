@@ -3,6 +3,7 @@
 use App\Enum\NewsStatusEnum;
 use App\Models\News;
 use App\Models\Project;
+use App\Models\ProjectCategory;
 use App\Models\SiteSetting;
 use App\Models\Slider;
 use Illuminate\Database\Eloquent\Collection;
@@ -31,10 +32,19 @@ if (!function_exists('news'))
     }
 }
 
-if (!function_exists('projects')) {
+if (!function_exists('projects'))
+{
     function projects(): Collection
     {
         return Project::with('category')->get()->groupBy('category.name');
+    }
+}
+
+if (!function_exists('category'))
+{
+    function category(): Collection
+    {
+        return ProjectCategory::all();
     }
 }
 

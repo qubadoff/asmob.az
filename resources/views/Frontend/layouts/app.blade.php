@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
         @yield('title')
     </title>
-
-    <!--Essential css files-->
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/all.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/slick.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/jquery-ui.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/nice-select.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/fancybox.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/animate.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/magnific-popup.css">
-    <link rel="stylesheet" href="{{ url('/assets') }}/css/style.css">
-
-    <!--favicon-->
-    <link rel="icon" href="{{ url('/assets') }}/images/favicon.png">
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
 </head>
-<body>
 
-<!--preloader start-->
-<div class="preloader">
-    <h1 class="display-1 fw-medium">ASMOB</h1>
-    <div class="preload-progress">
-        <span></span>
-    </div>
-</div>
-<!--preloader end-->
+<body>
 
 @include('Frontend.layouts.includes.header')
 
@@ -40,27 +53,16 @@
 
 @include('Frontend.layouts.includes.footer')
 
-
-<!--Esential Js Files-->
-<script src="{{ url('/assets') }}/js/jquery.min.js"></script>
-<script src="{{ url('/assets') }}/js/popper.min.js"></script>
-<script src="{{ url('/assets') }}/js/bootstrap.min.js"></script>
-<script src="{{ url('/assets') }}/js/slick.js"></script>
-<script src="{{ url('/assets') }}/js/jquery-ui.js"></script>
-<script src="{{ url('/assets') }}/js/nice-select.js"></script>
-<script src="{{ url('/assets') }}/js/fancybox.js"></script>
-<script src="{{ url('/assets') }}/js/countdown.min.js"></script>
-<script src="{{ url('/assets') }}/js/wow.js"></script>
-<script src="{{ url('/assets') }}/js/progress-bar.js"></script>
-<script src="{{ url('/assets') }}/js/parallax.js"></script>
-<script src="{{ url('/assets') }}/js/tilt-js.js"></script>
-<script src="{{ url('/assets') }}/js/magnific-popup.js"></script>
-<script src="{{ url('/assets') }}/js/waypoints.js"></script>
-<script src="{{ url('/assets') }}/js/counterup.min.js"></script>
-<script src="{{ url('/assets') }}/js/preloader.js"></script>
-<script src="{{ url('/assets') }}/js/isotop.min.js"></script>
-<script src="{{ url('/assets') }}/js/jquery.zoom.js"></script>
-<script src="{{ url('/assets') }}/js/script.js"></script>
-
+<script src="assets/script.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+></script>
 </body>
 </html>
