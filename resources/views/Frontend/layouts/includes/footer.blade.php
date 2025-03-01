@@ -11,7 +11,7 @@
           background-image: url('assets/images/background_process-1.jpg');
           background-repeat: no-repeat;
           background-position-x: 50%;
-          background-position-y: 0px;
+          background-position-y: 0;
           background-size: cover;
         "
     >

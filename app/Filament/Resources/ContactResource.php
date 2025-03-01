@@ -15,6 +15,8 @@ class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
+    protected static ?string $label = 'Əlaqə';
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -22,14 +24,14 @@ class ContactResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('phone')->required(),
-                    TextInput::make('email')->required(),
-                    TextInput::make('address')->required(),
-                    TextInput::make('facebook')->required(),
-                    TextInput::make('instagram')->required(),
-                    TextInput::make('tiktok')->required(),
-                    TextInput::make('linkedin')->required(),
-                    TextInput::make('x')->required(),
+                    TextInput::make('phone')->required()->label('Telefon'),
+                    TextInput::make('email')->required()->label('Email'),
+                    TextInput::make('address')->required()->label('Ünvan'),
+                    TextInput::make('facebook')->required()->label('Facebook'),
+                    TextInput::make('instagram')->required()->label('Instagram'),
+                    TextInput::make('tiktok')->required()->label('TikTok'),
+                    TextInput::make('linkedin')->required()->label('Linkedin'),
+                    TextInput::make('x')->required()->label('X'),
                 ])->columns(4)
             ]);
     }
@@ -38,14 +40,14 @@ class ContactResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('phone'),
-                Tables\Columns\TextColumn::make('email'),
-                Tables\Columns\TextColumn::make('address'),
-                Tables\Columns\TextColumn::make('facebook'),
-                Tables\Columns\TextColumn::make('instagram'),
-                Tables\Columns\TextColumn::make('tiktok'),
-                Tables\Columns\TextColumn::make('linkedin'),
-                Tables\Columns\TextColumn::make('x'),
+                Tables\Columns\TextColumn::make('phone')->label('Telefon'),
+                Tables\Columns\TextColumn::make('email')->label('Email'),
+                Tables\Columns\TextColumn::make('address')->label('Ünvan'),
+                Tables\Columns\TextColumn::make('facebook')->label('Facebook'),
+                Tables\Columns\TextColumn::make('instagram')->label('Instagram'),
+                Tables\Columns\TextColumn::make('tiktok')->label('TikTok'),
+                Tables\Columns\TextColumn::make('linkedin')->label('Linkedin'),
+                Tables\Columns\TextColumn::make('x')->label('X'),
             ])
             ->filters([
                 //

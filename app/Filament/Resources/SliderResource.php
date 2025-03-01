@@ -21,14 +21,17 @@ class SliderResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $label = 'Slider';
+
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
-                    Textarea::make('description')->nullable(),
-                    FileUpload::make('image')->image()->required(),
+                    TextInput::make('name')->required()->label('Başlıq'),
+                    Textarea::make('description')->nullable()->label('Qısa Məzmun'),
+                    FileUpload::make('image')->image()->required()->label('Şəkil'),
                     Select::make('status')->options([
                         SliderStatusEnum::ACTIVE->value => SliderStatusEnum::ACTIVE->getLabel(),
                         SliderStatusEnum::INACTIVE->value => SliderStatusEnum::INACTIVE->getLabel(),
@@ -42,8 +45,8 @@ class SliderResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Başlıq'),
+                Tables\Columns\ImageColumn::make('image')->label('Şəkil'),
             ])
             ->filters([
                 //

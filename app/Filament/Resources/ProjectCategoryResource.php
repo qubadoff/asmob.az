@@ -17,6 +17,9 @@ class ProjectCategoryResource extends Resource
 
     protected static ?string $navigationGroup = 'Project';
 
+    protected static ?string $label = 'Proyekt Kateqoriyaları';
+
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -24,7 +27,7 @@ class ProjectCategoryResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
+                    TextInput::make('name')->required()->label('Kateqoriya Adı'),
                 ])
             ]);
     }
@@ -34,7 +37,7 @@ class ProjectCategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Kateqoriya Adı'),
             ])
             ->filters([
                 //

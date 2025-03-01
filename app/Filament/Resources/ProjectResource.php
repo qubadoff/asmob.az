@@ -23,6 +23,9 @@ class ProjectResource extends Resource
 
     protected static ?string $navigationGroup = 'Project';
 
+    protected static ?string $label = 'Proyektlər';
+
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -31,24 +34,24 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Select::make('category_id')->relationship('category', 'name')->required()->label('Project Category'),
-                    Select::make('other_category_id')->relationship('otherCategory', 'name')->required()->label('Other Category'),
-                    TextInput::make('name')
+                    Select::make('category_id')->relationship('category', 'name')->required()->label('Project Category')->label('Kateqoriya'),
+                    Select::make('other_category_id')->relationship('otherCategory', 'name')->required()->label('Other Category')->label('Alt Kateqoriya'),
+                    TextInput::make('name')->label('Başlıq')
                         ->required()
                         ->live(debounce: '1000')
                         ->afterStateUpdated(fn (Set $set,?string  $state) => $set('slug', Str::slug($state))),
-                    TextInput::make('slug')->required(),
-                    Textarea::make('description')->nullable(),
-                    TextInput::make('delivery_time')->required(),
-                    TextInput::make('materials')->required(),
+                    TextInput::make('slug')->required()->label('Slug'),
+                    Textarea::make('description')->nullable()->label('Qısa Məzmun'),
+                    TextInput::make('delivery_time')->required()->label('Təsdiq vaxtı'),
+                    TextInput::make('materials')->required()->label('Materiallar'),
                     Select::make('status')->options([
                         ProjectStatusEnum::ACTIVE->value => ProjectStatusEnum::ACTIVE->getLabel(),
                         ProjectStatusEnum::INACTIVE->value => ProjectStatusEnum::INACTIVE->getLabel(),
-                    ])->required(),
+                    ])->required()->label('Status')->default(1),
                 ])->columns(3),
                 Section::make([
-                    FileUpload::make('images')->multiple()->image()->required(),
-                    FileUpload::make('videos')->multiple(),
+                    FileUpload::make('images')->multiple()->image()->required()->label('Şəkiler'),
+                    FileUpload::make('videos')->multiple()->label('Videolar'),
                 ])->columns()
             ]);
     }
@@ -58,10 +61,10 @@ class ProjectResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\TextColumn::make('delivery_time')->searchable(),
-                Tables\Columns\TextColumn::make('status')->badge(),
-                Tables\Columns\ImageColumn::make('images')
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Başlıq'),
+                Tables\Columns\TextColumn::make('delivery_time')->searchable()->label('Təsdiq vaxtı'),
+                Tables\Columns\TextColumn::make('status')->badge()->label('Status'),
+                Tables\Columns\ImageColumn::make('images')->label('Şəkiler'),
             ])
             ->filters([
                 //

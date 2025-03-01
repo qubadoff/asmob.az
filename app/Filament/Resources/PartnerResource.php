@@ -16,6 +16,8 @@ class PartnerResource extends Resource
 {
     protected static ?string $model = Partner::class;
 
+    protected static ?string $label = 'Partnyorlar';
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -23,8 +25,8 @@ class PartnerResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
-                    FileUpload::make('image')->image()->required(),
+                    TextInput::make('name')->required()->label('Partnyor Adı'),
+                    FileUpload::make('image')->image()->required()->label('Partnyor Logo'),
                 ])
             ]);
     }
@@ -34,8 +36,8 @@ class PartnerResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\ImageColumn::make('image')
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Partnyor Adı'),
+                Tables\Columns\ImageColumn::make('image')->label('Partnyor Logo'),
             ])
             ->filters([
                 //

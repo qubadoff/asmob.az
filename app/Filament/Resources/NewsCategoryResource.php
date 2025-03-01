@@ -17,6 +17,9 @@ class NewsCategoryResource extends Resource
 
     protected static ?string $navigationGroup = 'News';
 
+    protected static ?string $label = 'Blok Kategoriyaları';
+
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -25,7 +28,7 @@ class NewsCategoryResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
+                    TextInput::make('name')->required()->label('Kategoriya Adı'),
                 ])
             ]);
     }
@@ -35,7 +38,7 @@ class NewsCategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Kategoriya Adı'),
             ])
             ->filters([
                 //

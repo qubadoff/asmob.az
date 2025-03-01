@@ -17,6 +17,8 @@ class OtherCategoryResource extends Resource
 
     protected static ?string $navigationGroup = 'Project';
 
+    protected static ?string $label = 'Alt kateqoriyalar';
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -25,7 +27,7 @@ class OtherCategoryResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
+                    TextInput::make('name')->required()->label('Kateqoriya Adı'),
                 ])
             ]);
     }
@@ -35,7 +37,7 @@ class OtherCategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Kateqoriya Adı'),
             ])
             ->filters([
                 //

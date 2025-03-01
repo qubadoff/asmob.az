@@ -16,6 +16,9 @@ class SiteSettingResource extends Resource
 {
     protected static ?string $model = SiteSetting::class;
 
+    protected static ?string $label = 'Məlumatlar';
+
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -23,12 +26,12 @@ class SiteSettingResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
-                    TextInput::make('email')->required(),
-                    TextInput::make('phone')->required(),
-                    TextInput::make('location')->required(),
-                    TextInput::make('map')->required(),
-                    FileUpload::make('logo')->image()->required(),
+                    TextInput::make('name')->required()->label('Şirkət Adı'),
+                    TextInput::make('email')->required()->label('Email'),
+                    TextInput::make('phone')->required()->label('Telefon'),
+                    TextInput::make('location')->required()->label('Ünvan'),
+                    TextInput::make('map')->required()->label('Google Maps Linki'),
+                    FileUpload::make('logo')->image()->required()->label('Logo'),
                 ])
             ]);
     }
@@ -38,11 +41,11 @@ class SiteSettingResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\TextColumn::make('email')->searchable(),
-                Tables\Columns\TextColumn::make('phone')->searchable(),
-                Tables\Columns\TextColumn::make('location')->searchable(),
-                Tables\Columns\ImageColumn::make('logo')
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Şirkət Adı'),
+                Tables\Columns\TextColumn::make('email')->searchable()->label('Email'),
+                Tables\Columns\TextColumn::make('phone')->searchable()->label('Telefon'),
+                Tables\Columns\TextColumn::make('location')->searchable()->label('Ünvan'),
+                Tables\Columns\ImageColumn::make('logo')->label('Logo'),
             ])
             ->filters([
                 //

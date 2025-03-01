@@ -24,6 +24,8 @@ class NewsResource extends Resource
 
     protected static ?string $navigationGroup = 'News';
 
+    protected static ?string $label = 'Bloglar';
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -32,9 +34,9 @@ class NewsResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Select::make('category_id')->relationship('category', 'name')->required(),
+                    Select::make('category_id')->relationship('category', 'name')->required()->label('Kategoriya'),
                     TextInput::make('title')
-                        ->required()
+                        ->required()->label('Başlıq')
                         ->live(debounce: '1000')
                         ->afterStateUpdated(fn (Set $set,?string  $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->label('Slug')->required(),
@@ -44,11 +46,11 @@ class NewsResource extends Resource
                     ])->required()->default(0),
                 ])->columns(),
                 Section::make([
-                    Textarea::make('description')->nullable(),
-                    RichEditor::make('body')->required(),
+                    Textarea::make('description')->nullable()->label('Qısa Məzmun'),
+                    RichEditor::make('body')->required()->label('Məzmun'),
                 ]),
                 Section::make([
-                    FileUpload::make('images')->image()->required(),
+                    FileUpload::make('images')->image()->required()->label('Şəkiler'),
                 ])
             ]);
     }
@@ -58,8 +60,8 @@ class NewsResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('title')->searchable(),
-                Tables\Columns\ImageColumn::make('images'),
+                Tables\Columns\TextColumn::make('title')->searchable()->label('Başlıq'),
+                Tables\Columns\ImageColumn::make('images')->label('Şəkil'),
                 Tables\Columns\TextColumn::make('status')->badge(),
             ])
             ->filters([
