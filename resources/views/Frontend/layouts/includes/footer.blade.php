@@ -8,6 +8,7 @@
           padding-bottom: 55px;
           width: 100%;
           height: 82vh;
+          background-image: url('assets/images/background_process-1.jpg');
           background-repeat: no-repeat;
           background-position-x: 50%;
           background-position-y: 0px;
