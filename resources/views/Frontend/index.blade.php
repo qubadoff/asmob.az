@@ -197,12 +197,10 @@
 
     <div class="featured-works-container">
         <div class="featured-works-header">
-            <span class="highlight">Recent </span> News
+            <span class="highlight">Blog yazıları </span>
         </div>
         <p class="featured-works-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam
+            Bir sıra mövzülarda olan maraqlı yazılarımız ilə tanış olun
         </p>
     </div>
 
