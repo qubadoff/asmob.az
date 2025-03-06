@@ -13,6 +13,11 @@ class GeneralController extends Controller
         return view('Frontend.index');
     }
 
+    public function about(): View
+    {
+        return \view('Frontend.about');
+    }
+
     public function contact(): View
     {
         return \view('Frontend.contact');
@@ -38,5 +43,15 @@ class GeneralController extends Controller
         $data = Project::query()->where('id', $id)->first();
 
         return \view('Frontend.singleOurProjects', compact('data'));
+    }
+
+    public function blog(): View
+    {
+        return \view('Frontend.blog');
+    }
+
+    public function singleBlog($id): View
+    {
+        return \view('Frontend.singleBlog');
     }
 }

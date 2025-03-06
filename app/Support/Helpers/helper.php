@@ -2,6 +2,7 @@
 
 use App\Enum\NewsStatusEnum;
 use App\Models\News;
+use App\Models\Partner;
 use App\Models\Project;
 use App\Models\ProjectCategory;
 use App\Models\SiteSetting;
@@ -45,6 +46,14 @@ if (!function_exists('category'))
     function category(): Collection
     {
         return ProjectCategory::all();
+    }
+}
+
+if (!function_exists('partner'))
+{
+    function partner(): Collection
+    {
+        return Partner::all();
     }
 }
 

@@ -1,51 +1,61 @@
-<header>
-    <a href="{{ route("index") }}" id="logo">
-        <img src="{{ url('/storage/' . siteSetting()->logo) }}" alt="Logo" />
-    </a>
+<header id="siteHeader">
+    <nav>
+        <!-- Logo -->
+        <a href="{{ route("index") }}">
+            <img
+                src="{{ url('/storage', siteSetting()->logo) }}"
+                alt="{{ siteSetting()->logo }}"
+                class="logoimg"
+                style="width: 164px" />
+        </a>
 
-    <div class="nav_container">
-        <nav>
-            <div>
-                <ul class="list">
-                    <li class="cursor-pointer transition-1 listItem1">
-                        <a class="home_title" href="{{ route("index") }}">Ana səhifə</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div
-        class="burger_menu"
-        style="
-          width: 10%;
-          height: 100%;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          padding-right: 30px;
-        "
-    >
-        <div class="content second">
-            <div class="burger">
-                <span></span>
-            </div>
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu (Desktop) -->
+        <div id="navMenu">
+            <ul>
+                <li><a href="{{ route("index") }}">Ana səhifə</a></li>
+                <li><a href="{{ route("about") }}">Haqqımızda</a></li>
+                <li><a href="{{ route("blog") }}">Blog</a></li>
+                <li><a href="{{ route("contact") }}">Əlaqə</a></li>
+                <!-- Dropdown Menu (Desktop) -->
+                <!-- <li class="dropdown">
+                  <button class="dropdown-btn">
+                    <span>Dropdown</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                  </div>
+                </li> -->
+            </ul>
         </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+        <ul>
+            <li><a href="{{ route("index") }}">Ana səhifə</a></li>
+            <li><a href="{{ route("about") }}">Haqqımızda</a></li>
+            <li><a href="{{ route("blog") }}">Blog</a></li>
+            <li><a href="{{ route("contact") }}">Əlaqə</a></li>
+            <!-- Mobile Dropdown -->
+            <!-- <li class="mobile-dropdown">
+              <button id="mobileDropdownButton">
+                <span>Dropdown</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="mobileDropdownMenu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
+            </li> -->
+        </ul>
     </div>
-    <ul
-        class="accordion_container"
-        style="
-          position: absolute;
-          top: 85px;
-          width: 90%;
-          padding: 0;
-          border-top: 3px solid #222;
-          background-color: #fff;
-          display: none;
-        "
-    >
-        <li class="c">
-            <input type="checkbox" id="faq-1" />
-            <label for="faq-1" class="color-4 border-top-3">Ana səhifə</label>
-        </li>
-    </ul>
 </header>

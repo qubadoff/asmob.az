@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Details</title>
+    <link rel="stylesheet" href="../public/assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body class="dark-background">
+    <button onclick="window.history.back()" class="close-button">
+      &times;
+    </button>
+
+    <div class="image-details-container">
+      <h1 id="imageTitle" class="image-title">title</h1>
+      <p id="imageCategory" class="image-category">test</p>
+      <p id="imageDescription" class="image-description">test desc</p>
+
+      <div class="image-navigation">
+        <button id="prevImage" class="nav-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img
+          id="imageDisplay"
+          src="../public/assets/contacthero.jpg"
+          class="image-display" />
+        <button id="nextImage" class="nav-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../public/assets/imageDetail.js"></script>
+    <script src="../public/assets/loader.js"></script>
+  </body>
+</html>
