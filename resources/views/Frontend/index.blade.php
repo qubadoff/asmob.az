@@ -78,12 +78,14 @@
             <div class="text-section">
                 <div>
             <span class="title"
-            ><span class="highlight">Why</span> Choose Us</span
-            >
+            ><span class="highlight">
+                    Müştərilərimiz Niyə Bizi Seçir?
+                </span></span>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                        blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac
-                        sodales et luctus tellus.
+                        25 illik təcrübəsi ilə ASMOB mebel sənayesində yenilikçi yanaşması və üstün keyfiyyəti ilə fərqlənir. Biz otellər, restoranlar, iş mərkəzləri və premium mənzillər üçün dəmir, taxta və yumşaq materiallardan yüksək keyfiyyətli mebellər istehsal edirik.
+                        <br/>
+                        Məqsədimiz – müştərilərimizin gözləntilərini aşan, davamlı və estetik baxımdan mükəmməl mebellər təqdim etməkdir. Hər bir məhsulumuz funksionallıq, rahatlıq və zərifliyi özündə birləşdirir. ASMOB olaraq, güvən və keyfiyyəti əsas prinsipimiz kimi qoruyuruq və bu dəyərlər sayəsində bazarda seçilən brend olmuşuq.
+
                     </p>
                 </div>
                 <div class="features-list">
@@ -93,41 +95,37 @@
                             src="{{ url('/') }}/assets/pencilAndRuler.svg"
                             class="feature-icon"
                             alt="" />
-                        <h6>High Skilled Interior Design</h6>
+                        <h6>İstədiyiniz Dizaynda Mebel İstehsalı</h6>
                         <div class="separator"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                            non cursus turpis laoreet.
+                            Biz müştərilərimizin təqdim etdiyi dizayn əsasında yüksək keyfiyyətli və dayanıqlı mebellər istehsal edirik. Hər bir məhsul dəqiqlik və peşəkarlıqla hazırlanır, funksionallıq və estetik görünüş ön planda tutulur.
                         </p>
                     </div>
                     <!-- Card 2 -->
                     <div class="feature-card">
                         <img src="{{ url('/') }}/assets/happyface.svg" class="feature-icon" alt="" />
-                        <h6>Over 500 Satisfied Clients</h6>
+                        <h6>500-dən Çox Məmnun Müştəri</h6>
                         <div class="separator"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                            non cursus turpis laoreet.
+                            Bizim üçün müştəri məmnuniyyəti hər şeydən önəmlidir. Keyfiyyətimiz və xidmətimiz sayəsində yüzlərlə otel, restoran və biznes sahibləri ASMOB-u seçir.
                         </p>
                     </div>
                     <!-- Card 3 -->
                     <div class="feature-card">
                         <img src="{{ url('/') }}/assets/presentation.svg" class="feature-icon" alt="" />
-                        <h6>Full Pro Service</h6>
+                        <h6>Tam Peşəkar Xidmət</h6>
                         <div class="separator"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                            non cursus turpis laoreet.
+                            İstehsaldan quraşdırmaya qədər hər mərhələdə peşəkar yanaşma tətbiq edirik. Sizə ən uyğun həlləri təklif edərək məkanınızı ideal şəkildə tərtib edirik.
                         </p>
                     </div>
                     <!-- Card 4 -->
                     <div class="feature-card">
                         <img src="{{ url('/') }}/assets/clock.svg" class="feature-icon" alt="" />
-                        <h6>Support 24/7</h6>
+                        <h6>7/24 Dəstək</h6>
                         <div class="separator"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                            non cursus turpis laoreet.
+                            Müştərilərimizin ehtiyaclarını qarşılamaq üçün hər zaman buradayıq. Xidmət sonrası dəstəyimiz və operativ komandamızla istənilən sualınızı cavablandırmağa hazırıq.
                         </p>
                     </div>
                 </div>
