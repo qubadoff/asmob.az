@@ -37,37 +37,37 @@
             <!-- Card 1 -->
             <div class="card-container" data-bg="livingroom">
                 <img src="{{ url('/') }}/assets/livingroom.svg" class="card-icon" />
-                <p>Living Room</p>
+                <p>Qonaq Otağı</p>
             </div>
 
             <!-- Card 2 -->
             <div class="card-container" data-bg="diningroom">
                 <img src="{{ url('/') }}/assets/diningroom.svg" class="card-icon" />
-                <p>Dining Room</p>
+                <p>Yemək otağı</p>
             </div>
 
             <!-- Card 3 -->
             <div class="card-container" data-bg="bedroom">
                 <img src="{{ url('/') }}/assets/bedroom.svg" class="card-icon" />
-                <p>Bedroom</p>
+                <p>Yataq otağı</p>
             </div>
 
             <!-- Card 4 -->
             <div class="card-container" data-bg="bathroom">
                 <img src="{{ url('/') }}/assets/bathroom.svg" class="card-icon" />
-                <p>Bathroom</p>
+                <p>Hamam</p>
             </div>
 
             <!-- Card 5 -->
             <div class="card-container" data-bg="office">
                 <img src="{{ url('/') }}/assets/office.svg" class="card-icon" />
-                <p>Office</p>
+                <p>Ofis</p>
             </div>
 
             <!-- Card 6 -->
             <div class="card-container" data-bg="exterior">
                 <img src="{{ url('/') }}/assets/exterior.svg" class="card-icon" />
-                <p>Exterior</p>
+                <p>Eksteryer</p>
             </div>
         </div>
     </div>
