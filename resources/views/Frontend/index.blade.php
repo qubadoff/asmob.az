@@ -181,12 +181,8 @@
             buttons.forEach(button => {
                 button.addEventListener("click", function () {
                     const category = this.getAttribute("data-category");
-
-                    // Aktif butonu değiştir
                     document.querySelector(".filter-btn.active").classList.remove("active");
                     this.classList.add("active");
-
-                    // Tüm öğeleri gizle, sadece seçilen kategoriyi göster
                     galleryItems.forEach(item => {
                         if (category === "all" || item.getAttribute("data-category") === category) {
                             item.style.display = "block";
@@ -198,6 +194,49 @@
             });
         });
     </script>
+
+    <div class="featured-works-container">
+        <div class="featured-works-header">
+            <span class="highlight">Recent </span> News
+        </div>
+        <p class="featured-works-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam
+        </p>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="main-blog-wrapper">
+        <div class="main-blog-container">
+            @forelse(news() as $news)
+                <div class="main-blog-card">
+                    <div class="main-blog-img-container">
+                        <img src="{{ url('/storage/' . $news->images) }}" alt="Blog Post Image" />
+                    </div>
+                    <div class="main-blog-content">
+                        <p>
+                            <i class="fas fa-calendar-alt"></i> {{ \Carbon\Carbon::parse($news->created_at)->diffForHumans() }}
+                            <i class="fas fa-eye"></i> 176
+                        </p>
+                        <h2>
+                            <a href="{{ route("singleBlog", ['id' => $news->id]) }}">
+                                {{ $news->title }}
+                            </a>
+                        </h2>
+                        <p>
+                            {{ $news->description }}
+                        </p>
+                        <a href="{{ route("singleBlog", ['id' => $news->id]) }}">
+                            Ətraflı
+                        </a>
+                    </div>
+                </div>
+            @empty
+                No Data !
+            @endforelse
+        </div>
+    </div>
 
 
     <!-- Contact Us Section -->

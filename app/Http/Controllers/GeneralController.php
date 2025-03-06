@@ -52,6 +52,8 @@ class GeneralController extends Controller
 
     public function singleBlog($id): View
     {
-        return \view('Frontend.singleBlog');
+        $data = News::query()->where('id', $id)->first();
+
+        return \view('Frontend.singleBlog', compact('data'));
     }
 }
