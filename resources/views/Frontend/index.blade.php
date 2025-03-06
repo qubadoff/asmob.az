@@ -1,6 +1,6 @@
 @extends('Frontend.layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Ana səhifə')
 
 @section('content')
 
