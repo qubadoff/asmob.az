@@ -33,23 +33,22 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        let projects = @json($relatedProjects);
-        let currentIndex = projects.findIndex(p => p.id === {{ $data->id }});
+        let images = @json($data->images);
+        let currentIndex = 0;
 
-        function updateProject() {
-            if (currentIndex < 0 || currentIndex >= projects.length) return;
-            const project = projects[currentIndex];
-            window.location.href = "/ourProjects/" + project.id;
+        function updateImage() {
+            if (images.length === 0) return;
+            document.getElementById("imageDisplay").src = "{{ url('/storage/') }}/" + images[currentIndex];
         }
 
         document.getElementById("prevImage").addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-            updateProject();
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage();
         });
 
         document.getElementById("nextImage").addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % projects.length;
-            updateProject();
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
         });
     });
 </script>
