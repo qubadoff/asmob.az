@@ -14,8 +14,8 @@
 <!-- Proje Detayları -->
 <div style="max-width: 900px; margin: 50px auto; padding: 20px; text-align: center;">
     <h1 id="imageTitle" style="margin-bottom: 10px;">{{ $data->name }}</h1>
-    <p id="imageCategory" style="margin: 5px 0;">Kategori: {{ $data->category->name }}</p>
-    <p id="imageOtherCategory" style="margin: 5px 0;">Diğer Kategori: {{ $data->otherCategory->name ?? 'Belirtilmemiş' }}</p>
+    <p id="imageCategory" style="margin: 5px 0;">Kateqoriya: {{ $data->category->name }}</p>
+    <p id="imageOtherCategory" style="margin: 5px 0;">Digər Kateqoriya: {{ $data->otherCategory->name ?? 'Unknown' }}</p>
     <p id="imageDescription" style="margin: 15px 0; font-size: 14px; color: #ccc;">{{ $data->description }}</p>
 
     <!-- Görsel ve Navigasyon -->
