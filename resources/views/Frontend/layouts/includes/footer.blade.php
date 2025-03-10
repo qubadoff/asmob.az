@@ -35,7 +35,7 @@
                         <img src="{{ url('/storage/' . $news->images) }}" alt="Post Image" />
                         <div>
                             <p class="post-title">
-                                <a href="{{ route("news", ['id' => $news->id]) }}">
+                                <a href="{{ route("singleBlog", ['id' => $news->id]) }}">
                                     {{ $news->title }}
                                 </a>
                             </p>
