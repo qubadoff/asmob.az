@@ -58,15 +58,34 @@
 
             <!-- Contact Form -->
             <div class="contact-form">
+                @if(Session::has('success'))
+                    <div class="alert alert-success">
+                        {{ Session::get('success') }}
+                        @php
+                            \Illuminate\Support\Facades\Session::forget('success');
+                        @endphp
+                    </div>
+                @endif
+                @if(Session::has('error'))
+                    <div class="alert alert-danger">
+                        {{ Session::get('error') }}
+                        @php
+                            \Illuminate\Support\Facades\Session::forget('error');
+                        @endphp
+                    </div>
+                @endif
                 <h2 class="text-orange">Bizə yazın</h2>
                 <p>
                     Təklif və istəkləriniz barədə bizə yazın. Ən qısa müddətdə geri dönüş ediləcək.
                 </p>
 
-                <form>
-                    <input type="text" placeholder="Ad və Soyad" />
-                    <input type="email" placeholder="E-mail adresi" />
-                    <textarea placeholder="Mesaj" rows="4"></textarea>
+                <form method="POST" action="{{ route("sendMessage") }}">
+                    @csrf
+                    @method('POST')
+                    <input type="text" name="name" placeholder="Ad və Soyad" required />
+                    <input type="text" name="phone" placeholder="Telefon nömrəsi" required />
+                    <input type="email" name="email" placeholder="E-mail adresi" required />
+                    <textarea name="body" placeholder="Mesaj" rows="4" required></textarea>
                     <button type="submit">Göndər</button>
                 </form>
             </div>

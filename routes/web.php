@@ -12,3 +12,5 @@ Route::get('/blog/{id}', [GeneralController::class, 'singleBlog'])->name('single
 Route::get('/contact', [GeneralController::class, 'contact'])->name('contact');
 
 Route::get('/news/{id}', [GeneralController::class, 'news'])->name('news');
+
+Route::post('/sendMessage', [GeneralController::class, 'sendMessage'])->name('sendMessage');
