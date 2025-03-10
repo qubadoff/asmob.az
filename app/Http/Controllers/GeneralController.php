@@ -39,16 +39,18 @@ class GeneralController extends Controller
 
     public function singleOurProjects($id): View
     {
-        $currentProject = Project::findOrFail($id);
+        $data = Project::findOrFail($id);
 
-        // Aynı kategoriye sahip ama farklı otherCategory'ye ait projeleri getir
+        // Aynı kategoriye sahip ama otherCategory'si farklı olan projeleri bul
         $relatedProjects = Project::query()
-            ->where('category_id', $currentProject->category_id)
-            ->where('other_category_id', '!=', $currentProject->other_category_id)
+            ->where('category_id', $data->category_id)
+            ->where('other_category_id', '!=', $data->other_category_id)
+            ->where('id', '!=', $data->id) // Kendini hariç tut
             ->get();
 
-        return view('Frontend.singleOurProjects', compact('currentProject', 'relatedProjects'));
+        return view('Frontend.singleOurProjects', compact('data', 'relatedProjects'));
     }
+
 
 
     public function singleBlog($id): View
