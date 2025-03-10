@@ -31,13 +31,15 @@
             <div class="footer-column">
                 <h1>Bloglar</h1>
                 @forelse(news() as $news)
-                    <div class="recent-post">
-                        <img src="{{ url('/storage/' . $news->images) }}" alt="Post Image" />
-                        <div>
-                            <p class="post-title">{{ $news->title }}</p>
-                            <p>Tarix: {{ \Carbon\Carbon::parse($news->created_at)->format('d.m.Y') }}</p>
+                    <a href="{{ route("news", ['id' => $news->id]) }}">
+                        <div class="recent-post">
+                            <img src="{{ url('/storage/' . $news->images) }}" alt="Post Image" />
+                            <div>
+                                <p class="post-title">{{ $news->title }}</p>
+                                <p>Tarix: {{ \Carbon\Carbon::parse($news->created_at)->format('d.m.Y') }}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 @empty
                     No Data !
                 @endforelse
