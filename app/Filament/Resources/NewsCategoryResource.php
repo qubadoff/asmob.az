@@ -17,7 +17,7 @@ class NewsCategoryResource extends Resource
 
     protected static ?string $navigationGroup = 'Bloglar';
 
-    protected static ?string $label = 'Blok Kategoriyaları';
+    protected static ?string $label = 'Blog Kategoriyaları';
 
 
 
