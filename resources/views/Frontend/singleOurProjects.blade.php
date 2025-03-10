@@ -16,11 +16,11 @@
     <p id="imageDescription" class="image-description">{{ $data->description }}</p>
 
     <div class="image-navigation">
-        <button id="prevImage" class="nav-button">
+        <button id="prevProject" class="nav-button">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
         <img id="imageDisplay" src="{{ url('/storage/' . $data->images[0]) }}" class="image-display" alt=""/>
-        <button id="nextImage" class="nav-button">
+        <button id="nextProject" class="nav-button">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
     </div>
@@ -33,27 +33,27 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        let images = @json($data->images);
-        let currentIndex = 0;
+        let projects = @json($relatedProjects);
+        let currentIndex = projects.findIndex(p => p.id === {{ $data->id }});
 
-        function updateImage() {
-            if (images.length === 0) return;
-            document.getElementById("imageDisplay").src = "{{ url('/storage/') }}/" + images[currentIndex];
+        function updateProject() {
+            if (currentIndex < 0 || currentIndex >= projects.length) return;
+            const project = projects[currentIndex];
+            window.location.href = "/ourProjects/" + project.id;
         }
 
-        document.getElementById("prevImage").addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateImage();
+        document.getElementById("prevProject").addEventListener("click", function () {
+            currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+            updateProject();
         });
 
-        document.getElementById("nextImage").addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateImage();
+        document.getElementById("nextProject").addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % projects.length;
+            updateProject();
         });
     });
 </script>
 
-<script src="{{ asset('/') }}assets/imageDetail.js"></script>
 <script src="{{ asset('/') }}assets/loader.js"></script>
 </body>
 </html>
