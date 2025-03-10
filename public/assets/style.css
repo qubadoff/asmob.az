@@ -451,9 +451,9 @@ nav a img {
 .description {
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-top: 10px;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 /* Features List */
