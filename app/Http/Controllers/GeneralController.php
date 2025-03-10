@@ -52,13 +52,6 @@ class GeneralController extends Controller
         ]);
     }
 
-
-
-
-
-
-
-
     public function singleBlog($id): View
     {
         $data = News::query()->where('id', $id)->first();
