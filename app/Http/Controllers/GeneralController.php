@@ -39,15 +39,14 @@ class GeneralController extends Controller
 
     public function singleOurProjects($id): View
     {
+        $data = Project::findOrFail($id);
 
-        $data = Project::query()->where('id', $id)->first();
+        $relatedProjects = Project::where('category_id', $data->category_id)
+            ->where('id', '!=', $id)
+            ->where('other_category_id', '!=', $data->other_category_id)
+            ->get(['id', 'name', 'images', 'other_category_id']);
 
-        return \view('Frontend.singleOurProjects', compact('data'));
-    }
-
-    public function blog(): View
-    {
-        return \view('Frontend.blog');
+        return view('Frontend.singleOurProjects', compact('data', 'relatedProjects'));
     }
 
     public function singleBlog($id): View
