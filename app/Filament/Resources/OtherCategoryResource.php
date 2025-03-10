@@ -15,7 +15,7 @@ class OtherCategoryResource extends Resource
 {
     protected static ?string $model = OtherCategory::class;
 
-    protected static ?string $navigationGroup = 'Project';
+    protected static ?string $navigationGroup = 'Layihələr';
 
     protected static ?string $label = 'Alt kateqoriyalar';
 

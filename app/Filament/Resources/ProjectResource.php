@@ -21,7 +21,7 @@ class ProjectResource extends Resource
 {
     protected static ?string $model = Project::class;
 
-    protected static ?string $navigationGroup = 'Project';
+    protected static ?string $navigationGroup = 'Layihələr';
 
     protected static ?string $label = 'Proyektlər';
 

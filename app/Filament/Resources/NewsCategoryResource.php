@@ -15,7 +15,7 @@ class NewsCategoryResource extends Resource
 {
     protected static ?string $model = NewsCategory::class;
 
-    protected static ?string $navigationGroup = 'News';
+    protected static ?string $navigationGroup = 'Bloglar';
 
     protected static ?string $label = 'Blok Kategoriyaları';
 

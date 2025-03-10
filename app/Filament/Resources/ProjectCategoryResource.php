@@ -15,7 +15,7 @@ class ProjectCategoryResource extends Resource
 {
     protected static ?string $model = ProjectCategory::class;
 
-    protected static ?string $navigationGroup = 'Project';
+    protected static ?string $navigationGroup = 'Layihələr';
 
     protected static ?string $label = 'Proyekt Kateqoriyaları';
 
