@@ -19,7 +19,7 @@
     <p id="imageOtherCategory" class="image-category">Diğer Kategori: {{ $data->otherCategory->name ?? 'Belirtilmemiş' }}</p>
     <p id="imageDescription" class="image-description">{{ $data->description }}</p>
 
-    <!-- Görsel ve navigasyon -->
+    <!-- Görsel ve Navigasyon -->
     <div class="image-navigation">
         <button id="prevProject" class="nav-button">
             <i class="fa-solid fa-chevron-left"></i>
@@ -36,41 +36,46 @@
     <div class="spinner"></div>
 </div>
 
-<!-- JS -->
+<!-- JavaScript -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        let projects = @json($projects);
-        let currentProjectId = {{ $data->id }};
-        let currentIndex = projects.findIndex(p => p.id === currentProjectId);
+        let projects = @json($projects); // Tüm projeler
+        let currentProjectId = {{ $data->id }}; // Şu anki proje
+        let currentIndex = projects.findIndex(p => p.id === currentProjectId); // Şu anki projenin index'i
 
         console.log('Projeler:', projects);
         console.log('Başlangıç Index:', currentIndex);
 
+        // Proje Bilgilerini Güncelleme Fonksiyonu
         function updateProject(index) {
             let project = projects[index];
+            console.log('Geçilen Proje:', project);
 
-            // Bilgileri güncelle
+            // Metin içeriklerini güncelle
             document.getElementById('imageTitle').innerText = project.name;
             document.getElementById('imageCategory').innerText = "Kategori: " + (project.category?.name || 'Belirtilmemiş');
             document.getElementById('imageOtherCategory').innerText = "Diğer Kategori: " + (project.other_category?.name || 'Belirtilmemiş');
             document.getElementById('imageDescription').innerText = project.description;
 
-            // Görseli güvenli şekilde güncelle
+            // Görsel güncelle (eğer varsa)
             let imageElement = document.getElementById('imageDisplay');
-            if (project.images && project.images.length > 0) {
+            if (project.images && project.images.length > 0 && project.images[0]) {
                 let imageUrl = "/storage/" + project.images[0];
-                imageElement.src = imageUrl + '?t=' + new Date().getTime(); // Cache temizle
+                console.log('Yeni Görsel:', imageUrl);
+                imageElement.src = imageUrl + '?v=' + new Date().getTime(); // Cache kır
             } else {
+                console.log('Varsayılan Görsel Kullanıldı');
                 imageElement.src = "/assets/default-image.jpg"; // Varsayılan resim
             }
         }
 
-        // Önce ve sonraki proje geçişleri
+        // Sol tuş (önceki proje)
         document.getElementById("prevProject").addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + projects.length) % projects.length;
             updateProject(currentIndex);
         });
 
+        // Sağ tuş (sonraki proje)
         document.getElementById("nextProject").addEventListener("click", function () {
             currentIndex = (currentIndex + 1) % projects.length;
             updateProject(currentIndex);
