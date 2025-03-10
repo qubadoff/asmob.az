@@ -48,6 +48,8 @@ class GeneralController extends Controller
             ->where('id', '!=', $data->id) // Kendini hariç tut
             ->get();
 
+        dd($data, $relatedProjects);
+
         return view('Frontend.singleOurProjects', compact('data', 'relatedProjects'));
     }
 
