@@ -39,23 +39,23 @@ class GeneralController extends Controller
 
     public function singleOurProjects($id): View
     {
-        $data = Project::with('category')->findOrFail($id);
+        $data = Project::with(['category', 'otherCategory'])->findOrFail($id);
 
-        // Aynı kategoriye ait, kendisi hariç, other_category_id'si farklı projeleri getir
+        // Aynı kategoriye sahip diğer projeleri getir (kendisi hariç)
         $relatedProjects = Project::query()
             ->where('category_id', $data->category_id)
-            ->where('other_category_id', '!=', $data->other_category_id)
             ->where('id', '!=', $data->id) // Kendisi hariç
             ->get();
 
-        // İlk sıraya kendi projemizi ekle, ki sıralamada baştan başlasın
+        // İlk sıraya kendi projesini de ekleyerek liste oluştur (gezinebilir liste)
         $projects = collect([$data])->merge($relatedProjects);
 
         return view('Frontend.singleOurProjects', [
-            'data' => $data, // İlk açılışta gösterilecek proje
-            'projects' => $projects, // Tüm gezilecek projeler (kendi dahil)
+            'data' => $data, // İlk gösterilecek proje
+            'projects' => $projects, // Aynı kategoriye ait tüm projeler (kendi dahil)
         ]);
     }
+
 
 
 
