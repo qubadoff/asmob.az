@@ -8,30 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body class="dark-background">
+
+<!-- Geri dön butonu -->
 <button onclick="window.history.back()" class="close-button">&times;</button>
 
+<!-- Proje Detayları -->
 <div class="image-details-container">
-
-    <!-- Proje Başlık -->
     <h1 id="imageTitle" class="image-title">{{ $data->name }}</h1>
-
-    <!-- Kategori ve Other Category -->
-    <p id="imageCategory" class="image-category">
-        Kategori: {{ $data->category->name }}
-    </p>
-    <p id="imageOtherCategory" class="image-category">
-        Diğer Kategori: {{ $data->otherCategory->name ?? 'Yok' }}
-    </p>
-
-    <!-- Açıklama -->
+    <p id="imageCategory" class="image-category">Kategori: {{ $data->category->name }}</p>
+    <p id="imageOtherCategory" class="image-category">Diğer Kategori: {{ $data->otherCategory->name ?? 'Belirtilmemiş' }}</p>
     <p id="imageDescription" class="image-description">{{ $data->description }}</p>
 
-    <!-- Görsel Navigasyon -->
+    <!-- Görsel ve navigasyon -->
     <div class="image-navigation">
         <button id="prevProject" class="nav-button">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <img id="imageDisplay" src="{{ url('/storage/' . $data->images[0]) }}" class="image-display" alt=""/>
+        <img id="imageDisplay" src="{{ url('/storage/' . $data->images[0]) }}" class="image-display" alt="Proje Görseli" />
         <button id="nextProject" class="nav-button">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
@@ -55,13 +48,24 @@
 
         function updateProject(index) {
             let project = projects[index];
+
+            // Bilgileri güncelle
             document.getElementById('imageTitle').innerText = project.name;
-            document.getElementById('imageCategory').innerText = "Kategori: " + project.category.name;
-            document.getElementById('imageOtherCategory').innerText = "Diğer Kategori: " + (project.other_category ? project.other_category.name : 'Yok');
+            document.getElementById('imageCategory').innerText = "Kategori: " + (project.category?.name || 'Belirtilmemiş');
+            document.getElementById('imageOtherCategory').innerText = "Diğer Kategori: " + (project.other_category?.name || 'Belirtilmemiş');
             document.getElementById('imageDescription').innerText = project.description;
-            document.getElementById('imageDisplay').src = "/storage/" + project.images[0];
+
+            // Görseli güvenli şekilde güncelle
+            let imageElement = document.getElementById('imageDisplay');
+            if (project.images && project.images.length > 0) {
+                let imageUrl = "/storage/" + project.images[0];
+                imageElement.src = imageUrl + '?t=' + new Date().getTime(); // Cache temizle
+            } else {
+                imageElement.src = "/assets/default-image.jpg"; // Varsayılan resim
+            }
         }
 
+        // Önce ve sonraki proje geçişleri
         document.getElementById("prevProject").addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + projects.length) % projects.length;
             updateProject(currentIndex);
