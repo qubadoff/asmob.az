@@ -17,6 +17,8 @@ class MessageResource extends Resource
 
     protected static ?string $navigationLabel = "Əlaqə mesajları";
 
+    protected static ?string $label = "Mesaj";
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -24,10 +26,10 @@ class MessageResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required(),
-                    TextInput::make('phone')->required(),
-                    TextInput::make('email')->required(),
-                    Textarea::make('body')->required(),
+                    TextInput::make('name')->required()->label('Ad Soyad'),
+                    TextInput::make('phone')->required()->label('Telefon'),
+                    TextInput::make('email')->required()->label('Email'),
+                    Textarea::make('body')->required()->label('Məzmun'),
                 ])
             ]);
     }
@@ -37,10 +39,10 @@ class MessageResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\TextColumn::make('phone')->searchable(),
-                Tables\Columns\TextColumn::make('email')->searchable(),
-                Tables\Columns\TextColumn::make('body')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->label('Ad Soyad'),
+                Tables\Columns\TextColumn::make('phone')->searchable()->label('Telefon'),
+                Tables\Columns\TextColumn::make('email')->searchable()->label('Email'),
+                Tables\Columns\TextColumn::make('body')->searchable()->label('Məzmun'),
             ])
             ->filters([
                 //
