@@ -78,8 +78,8 @@
             console.log('Geçilen Proje:', project);
 
             document.getElementById('imageTitle').innerText = project.name;
-            document.getElementById('imageCategory').innerText = "Kategori: " + (project.category?.name || 'Belirtilmemiş');
-            document.getElementById('imageOtherCategory').innerText = "Diğer Kategori: " + (project.other_category?.name || 'Belirtilmemiş');
+            document.getElementById('imageCategory').innerText = "Kateqoriya: " + (project.category?.name || 'Belirtilmemiş');
+            document.getElementById('imageOtherCategory').innerText = "Digər Kateqoriya: " + (project.other_category?.name || 'Belirtilmemiş');
             document.getElementById('imageDescription').innerText = project.description;
 
             let imageElement = document.getElementById('imageDisplay');
