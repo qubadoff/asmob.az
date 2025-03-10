@@ -41,10 +41,9 @@ class GeneralController extends Controller
     {
         $data = Project::with(['category', 'otherCategory'])->findOrFail($id);
 
-        // Aynı kategoriye ait tüm projeleri getir (ilişkilerle birlikte)
         $relatedProjects = Project::query()
             ->where('category_id', $data->category_id)
-            ->with(['category', 'otherCategory']) // İlişkiler dahil
+            ->with(['category', 'otherCategory'])
             ->get();
 
         return view('Frontend.singleOurProjects', [
