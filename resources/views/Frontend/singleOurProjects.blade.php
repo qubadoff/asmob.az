@@ -34,12 +34,12 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let projects = @json($relatedProjects);
-        let currentIndex = projects.findIndex(p => p.id === {{ $data->id }});
+        let currentProjectId = {{ $data->id }};
+        let currentIndex = projects.findIndex(p => p.id === currentProjectId);
 
         function updateProject() {
-            if (currentIndex < 0 || currentIndex >= projects.length) return;
-            const project = projects[currentIndex];
-            window.location.href = "/ourProjects/" + project.id;
+            if (projects.length === 0 || currentIndex < 0 || currentIndex >= projects.length) return;
+            window.location.href = "/ourProjects/" + projects[currentIndex].id;
         }
 
         document.getElementById("prevProject").addEventListener("click", function () {
