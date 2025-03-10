@@ -30,7 +30,7 @@
         <img
             id="imageDisplay"
             src="{{ url('/storage/' . $data->images[0]) }}"
-            class="image-display"  alt=""/>
+            class="image-display" style="width: 100%; height: 100%;"  alt=""/>
         <button id="nextImage" class="nav-button">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
