@@ -33,23 +33,26 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        let projects = @json($relatedProjects);
+        let projects = @json($projects); // Hepsi (kendi dahil)
         let currentProjectId = {{ $data->id }};
         let currentIndex = projects.findIndex(p => p.id === currentProjectId);
 
-        function updateProject() {
-            if (projects.length === 0 || currentIndex < 0 || currentIndex >= projects.length) return;
-            window.location.href = "/ourProjects/" + projects[currentIndex].id;
+        // Debug için bakabilirsin
+        console.log('Projects:', projects);
+        console.log('Current Index:', currentIndex);
+
+        function updateProject(index) {
+            window.location.href = "/ourProjects/" + projects[index].id;
         }
 
         document.getElementById("prevProject").addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-            updateProject();
+            updateProject(currentIndex);
         });
 
         document.getElementById("nextProject").addEventListener("click", function () {
             currentIndex = (currentIndex + 1) % projects.length;
-            updateProject();
+            updateProject(currentIndex);
         });
     });
 </script>
