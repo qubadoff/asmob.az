@@ -86,7 +86,7 @@
                     <input type="text" name="phone" placeholder="Telefon nömrəsi" required />
                     <input type="email" name="email" placeholder="E-mail adresi" required />
                     <textarea name="body" placeholder="Mesaj" rows="4" required></textarea>
-                    <button type="submit">Göndər</button>
+                    <button name="submit" type="submit">Göndər</button>
                 </form>
             </div>
         </div>
