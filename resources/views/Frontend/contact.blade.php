@@ -74,6 +74,7 @@
                         @endphp
                     </div>
                 @endif
+                    <br/>
                 <h2 class="text-orange">Bizə yazın</h2>
                 <p>
                     Təklif və istəkləriniz barədə bizə yazın. Ən qısa müddətdə geri dönüş ediləcək.
