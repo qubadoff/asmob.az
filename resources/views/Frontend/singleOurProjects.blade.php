@@ -39,7 +39,7 @@
         function updateProject() {
             if (currentIndex < 0 || currentIndex >= projects.length) return;
             const project = projects[currentIndex];
-            window.location.href = "/projects/" + project.id;
+            window.location.href = "/ourProjects/" + project.id;
         }
 
         document.getElementById("prevImage").addEventListener("click", function () {
