@@ -4,6 +4,9 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MessageResource\Pages;
 use App\Models\Message;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -20,7 +23,12 @@ class MessageResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Section::make([
+                    TextInput::make('name')->required(),
+                    TextInput::make('phone')->required(),
+                    TextInput::make('email')->required(),
+                    Textarea::make('body')->required(),
+                ])
             ]);
     }
 
