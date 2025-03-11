@@ -50,11 +50,14 @@
             <!-- Get In Touch Form -->
             <div class="footer-column">
                 <h1>Bizə yazın</h1>
-                <form class="footer-form">
-                    <input type="text" placeholder="Ad və Soyad" />
-                    <input type="email" placeholder="E-mail" />
-                    <textarea placeholder="Mesaj" rows="3"></textarea>
-                    <button type="submit">Göndər</button>
+                <form method="POST" action="{{ route("sendMessage") }}" class="footer-form">
+                    @csrf
+                    @method("POST")
+                    <input type="text" name="name" placeholder="Ad və Soyad" />
+                    <input type="text" name="phone" placeholder="Telefon nömrəsi" />
+                    <input type="email" name="email" placeholder="E-mail" />
+                    <textarea name="body" placeholder="Mesaj" rows="3"></textarea>
+                    <button name="submit" type="submit">Göndər</button>
                 </form>
             </div>
 
