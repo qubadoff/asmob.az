@@ -89,7 +89,7 @@
         <a href="#" class="social-icon facebook"
         ><i class="fab fa-facebook-f"></i
             ></a>
-        <a href="#" class="social-icon dribbble"
+        <a href="https://www.instagram.com/asmob.az/" target="_blank" class="social-icon dribbble"
         ><i class="fab fa-instagram"></i
             ></a>
         <a href="#" class="social-icon youtube"
