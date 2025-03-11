@@ -136,6 +136,8 @@
         </div>
     </div>
 
+    <br/>
+
     <!-- Featured Works -->
     <div class="featured-works-container">
         <div class="featured-works-header">
