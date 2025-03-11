@@ -23,7 +23,7 @@
 
         <div class="about-content">
             <!-- Contact Info & Form -->
-            <h3>Bizim haqqimizda</h3><br/>
+            <h3>Şirkət haqqında</h3><br/>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry’s standard dummy text ever

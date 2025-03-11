@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="image-section">
-                <img src="{{ url('/') }}/assets/roomherosecimg.png" alt="" />
+                <img src="{{ url('/') }}/mott.jpg" alt="" />
             </div>
         </div>
     </div>
