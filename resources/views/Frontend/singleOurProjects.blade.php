@@ -38,11 +38,11 @@
 
         <img id="imageDisplay" src="{{ url('/storage/' . $data->images[0]) }}" alt="Proje Görseli" style="
             max-width: 100%;
-            height: auto;
+            height: 900px;
             border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
             object-fit: cover;
-            max-height: 500px;
+            max-height: 900px;
         ">
 
         <button id="nextProject" style="
