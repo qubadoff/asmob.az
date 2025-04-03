@@ -50,7 +50,7 @@ class ProjectResource extends Resource
                     ])->required()->label('Status')->default(1),
                 ])->columns(3),
                 Section::make([
-                    FileUpload::make('images')->multiple()->image()->required()->label('Şəkiler'),
+                    FileUpload::make('images')->multiple()->image()->required()->label('Şəkillər'),
                     FileUpload::make('videos')->multiple()->label('Videolar'),
                 ])->columns()
             ]);
