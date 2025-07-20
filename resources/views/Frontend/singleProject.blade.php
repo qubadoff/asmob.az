@@ -52,8 +52,13 @@
 
 
 <div class="container py-5">
-    <h1 class="mb-4 text-center">{{ $project->name }}</h1>
-    <h3 class="mb-4 text-center">{{ $project->description }}</h3>
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">{{ $project->name }}</h1>
+        @if($project->description)
+            <p class="lead text-muted mt-3">{{ $project->description }}</p>
+        @endif
+    </div>
+
 
     @if($categories->isNotEmpty())
         <!-- Kategoriler -->
