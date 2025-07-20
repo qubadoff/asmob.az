@@ -94,7 +94,7 @@ nav a img {
 
 #navMenu ul li a {
     text-decoration: none;
-    color: #333;
+    color: whitesmoke;
     transition: 1s ease;
     padding: 10px 16px;
     display: flex;
