@@ -35,10 +35,10 @@ class ProjectResource extends Resource
             ->schema([
                 Section::make([
                     TextInput::make('name')->label('Başlıq')
-                        ->required()
-                        ->live(debounce: '1000')
-                        ->afterStateUpdated(fn (Set $set,?string  $state) => $set('slug', Str::slug($state))),
-                    TextInput::make('slug')->required()->label('Slug'),
+                        ->required(),
+//                        ->live(debounce: '1000')
+//                        ->afterStateUpdated(fn (Set $set,?string  $state) => $set('slug', Str::slug($state))),
+//                    TextInput::make('slug')->required()->label('Slug'),
                     Textarea::make('description')->nullable()->label('Qısa Məzmun'),
                     Select::make('status')->options([
                         ProjectStatusEnum::ACTIVE->value => ProjectStatusEnum::ACTIVE->getLabel(),
