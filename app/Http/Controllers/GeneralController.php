@@ -40,19 +40,26 @@ class GeneralController extends Controller
 
         $galleries = ProjectGallery::query()
             ->where('project_id', $id)
+            ->whereNotNull('project_category_id')
             ->with(['projectCategory'])
             ->get();
 
-        $categories = $galleries->groupBy('project_category_id')->map(function ($group) {
-            return (object)[
-                'id' => $group->first()->projectCategory->id,
-                'name' => $group->first()->projectCategory->name,
-                'image_count' => $group->reduce(fn($carry, $item) => $carry + count($item->images), 0),
-            ];
-        })->values();
+        $categories = $galleries
+            ->groupBy('project_category_id')
+            ->map(function ($group) {
+                $first = $group->first();
+                return (object)[
+                    'id' => $first->projectCategory?->id,
+                    'name' => $first->projectCategory?->name ?? 'Bilinmeyen Kategori',
+                    'image_count' => $group->reduce(fn($carry, $item) => $carry + count($item->images ?? []), 0),
+                ];
+            })
+            ->filter(fn($cat) => $cat->id !== null)
+            ->values();
 
         return view('Frontend.singleProject', compact('project', 'galleries', 'categories'));
     }
+
 
 
     public function blog(): View

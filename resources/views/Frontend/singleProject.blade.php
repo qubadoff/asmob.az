@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Gallery</title>
+    <title>{{ $project->name }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,12 +11,14 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
+
         .category-list {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 20px;
         }
+
         .category-item {
             padding: 8px 16px;
             background: #f5f5f5;
@@ -24,19 +26,27 @@
             cursor: pointer;
             transition: 0.2s;
         }
+
         .category-item.active {
             background: #007bff;
             color: white;
         }
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
         }
+
         .gallery-grid img {
             width: 100%;
             height: auto;
             border-radius: 8px;
+        }
+
+        .no-data {
+            color: #888;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -54,14 +64,15 @@
     </div>
 
     <div class="gallery-grid" id="galleryGrid">
-        @foreach($galleries->where('project_category_id', $categories->first()->id) as $item)
-            @foreach($item->images as $image)
+        @php $firstCategoryId = $categories->first()->id; @endphp
+        @foreach($galleries->where('project_category_id', $firstCategoryId) as $item)
+            @foreach($item->images ?? [] as $image)
                 <img src="{{ asset('storage/' . $image) }}" alt="Gallery image">
             @endforeach
         @endforeach
     </div>
 @else
-    <p>Bu projeye ait kategori veya görsel bulunamadı.</p>
+    <p class="no-data">Bu projeye ait kategori veya görsel bulunamadı.</p>
 @endif
 
 <script>
@@ -79,7 +90,7 @@
 
             let html = '';
             filtered.forEach(gallery => {
-                gallery.images.forEach(image => {
+                (gallery.images || []).forEach(image => {
                     html += `<img src="/storage/${image}" alt="Image">`;
                 });
             });
