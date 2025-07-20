@@ -148,14 +148,14 @@
         </p>
     </div>
 
-    <div class="filter-section">
-        <div class="filter-buttons">
-            <div class="filter-btn active" data-category="all">Bütün layihələr</div>
-            @foreach (projects() as $categoryName => $items)
-                <div class="filter-btn" data-category="{{ Str::slug($categoryName) }}">{{ $categoryName }}</div>
-            @endforeach
-        </div>
-    </div>
+{{--    <div class="filter-section">--}}
+{{--        <div class="filter-buttons">--}}
+{{--            <div class="filter-btn active" data-category="all">Bütün layihələr</div>--}}
+{{--            @foreach (projects() as $categoryName => $items)--}}
+{{--                <div class="filter-btn" data-category="{{ Str::slug($categoryName) }}">{{ $categoryName }}</div>--}}
+{{--            @endforeach--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="image-gallery" id="imageGallery">
         @foreach (projects() as $categoryName => $items)
