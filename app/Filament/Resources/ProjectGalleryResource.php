@@ -46,6 +46,8 @@ class ProjectGalleryResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
                 Tables\Columns\TextColumn::make('name')->searchable()->label('Ad'),
+                Tables\Columns\TextColumn::make('project.name')->searchable()->label('Layihə adı'),
+                Tables\Columns\TextColumn::make('projectCategory.name')->searchable()->label('Layihə kateqoriyası'),
                 Tables\Columns\ImageColumn::make('images')->label('Şəkillər')
             ])
             ->filters([
