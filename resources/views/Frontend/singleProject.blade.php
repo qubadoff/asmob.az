@@ -84,7 +84,7 @@
             @endforeach
         </div>
     @else
-        <p class="text-center no-data">Bu projeye ait kategori veya görsel bulunamadı.</p>
+        <p class="text-center no-data">Məlumat tapılmadı !</p>
     @endif
 </div>
 
