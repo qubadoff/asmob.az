@@ -161,15 +161,16 @@
         @foreach (projects() as $project)
             <div class="gallery-container" data-category="1">
                 <a href="#">
-                    <img src="{{ asset('storage/' . $project->image) }}" class="gallery-item" data-id="1"  alt=""/>
-                    <div class="gallery-overlay">
-                        <h1 style="color: whitesmoke">{{ $project->name }}</h1>
-                        <p>{{ $project->description }}</p>
+                    <img src="{{ asset('storage/' . $project->image) }}" class="gallery-item" data-id="1" alt="" />
+                    <div class="gallery-overlay" style="opacity: 1; visibility: visible; position: absolute; bottom: 0; background: rgba(0,0,0,0.5); width: 100%; padding: 10px;">
+                        <h1 style="color: whitesmoke; margin: 0; font-size: 20px;">{{ $project->name }}</h1>
+                        <p style="color: #ddd; font-size: 14px; margin: 5px 0 0;">{{ $project->description }}</p>
                     </div>
                 </a>
             </div>
         @endforeach
     </div>
+
 
     <div class="featured-works-container">
         <div class="featured-works-header">
