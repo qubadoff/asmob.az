@@ -15,6 +15,10 @@ class ProjectCategoryResource extends Resource
 {
     protected static ?string $model = ProjectCategory::class;
 
+    protected static ?string $navigationGroup = 'Layihələr';
+
+    protected static ?string $label = 'Layihə kateqoriyaları';
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
