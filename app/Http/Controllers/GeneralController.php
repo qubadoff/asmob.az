@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Message;
 use App\Models\News;
 use App\Models\Project;
+use App\Models\ProjectGallery;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -32,27 +34,26 @@ class GeneralController extends Controller
         return \view('Frontend.news', compact('data'));
     }
 
-    public function ourProjects(): View
+    public function singleProject($id): View
     {
-        $data = Project::query()->orderBy('created_at', 'desc')->paginate(20);
+        $project = Project::query()->findOrFail($id);
 
-        return \view('Frontend.ourProjects', compact('data'));
-    }
-
-    public function singleOurProjects($id): View
-    {
-        $data = Project::with(['category', 'otherCategory'])->findOrFail($id);
-
-        $relatedProjects = Project::query()
-            ->where('category_id', $data->category_id)
-            ->with(['category', 'otherCategory'])
+        $galleries = ProjectGallery::query()
+            ->where('project_id', $id)
+            ->with(['projectCategory'])
             ->get();
 
-        return view('Frontend.singleOurProjects', [
-            'data' => $data,
-            'projects' => $relatedProjects
-        ]);
+        $categories = $galleries->groupBy('project_category_id')->map(function ($group) {
+            return (object)[
+                'id' => $group->first()->projectCategory->id,
+                'name' => $group->first()->projectCategory->name,
+                'image_count' => $group->reduce(fn($carry, $item) => $carry + count($item->images), 0),
+            ];
+        })->values();
+
+        return view('Frontend.singleProject', compact('project', 'galleries', 'categories'));
     }
+
 
     public function blog(): View
     {
@@ -66,7 +67,7 @@ class GeneralController extends Controller
         return \view('Frontend.singleBlog', compact('data'));
     }
 
-    public function sendMessage(Request $request)
+    public function sendMessage(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required|max:200',
