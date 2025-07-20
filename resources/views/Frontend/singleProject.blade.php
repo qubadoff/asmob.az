@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $project->name }}</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
     <style>
         body {
@@ -45,7 +48,7 @@
     <h1 class="mb-4 text-center">{{ $project->name }}</h1>
 
     @if($categories->isNotEmpty())
-        <!-- Kategori Butonları -->
+        <!-- Kategoriler -->
         <div class="d-flex flex-wrap justify-content-center mb-4 gap-2" id="categoryList">
             @foreach($categories as $category)
                 <div class="btn btn-outline-primary category-item" data-category-id="{{ $category->id }}">
@@ -54,13 +57,15 @@
             @endforeach
         </div>
 
-        <!-- Galeri Grid -->
+        <!-- Galeri -->
         <div class="row gallery-grid" id="galleryGrid">
             @php $firstCategoryId = $categories->first()->id; @endphp
             @foreach($galleries->where('project_category_id', $firstCategoryId) as $item)
                 @foreach($item->images ?? [] as $image)
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <img src="{{ asset('storage/' . $image) }}" class="img-fluid shadow-sm" alt="Gallery image">
+                        <a href="{{ asset('storage/' . $image) }}" class="glightbox" data-gallery="project-gallery">
+                            <img src="{{ asset('storage/' . $image) }}" class="img-fluid shadow-sm" alt="Gallery image">
+                        </a>
                     </div>
                 @endforeach
             @endforeach
@@ -70,13 +75,29 @@
     @endif
 </div>
 
-<!-- Bootstrap JS -->
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
     const galleries = @json($galleries);
     const galleryGrid = document.getElementById('galleryGrid');
     const categoryItems = document.querySelectorAll('.category-item');
+
+    const loadLightbox = () => {
+        if (window.lightbox) {
+            window.lightbox.destroy();
+        }
+        window.lightbox = GLightbox({
+            selector: '.glightbox',
+        });
+    }
+
+    // Başlangıçta aktif kategori
+    if (categoryItems.length > 0) {
+        categoryItems[0].classList.add('active');
+        loadLightbox();
+    }
 
     categoryItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -91,18 +112,17 @@
                 (gallery.images || []).forEach(image => {
                     html += `
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                            <img src="/storage/${image}" class="img-fluid shadow-sm" alt="Image">
+                            <a href="/storage/${image}" class="glightbox" data-gallery="project-gallery">
+                                <img src="/storage/${image}" class="img-fluid shadow-sm" alt="Image">
+                            </a>
                         </div>`;
                 });
             });
 
             galleryGrid.innerHTML = html;
+            loadLightbox();
         });
     });
-
-    if (categoryItems.length > 0) {
-        categoryItems[0].classList.add('active');
-    }
 </script>
 
 </body>
