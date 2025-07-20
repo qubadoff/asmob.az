@@ -36,37 +36,37 @@
         <div class="card-list">
             <!-- Card 1 -->
             <div class="card-container" data-bg="livingroom">
-                <img src="{{ url('/') }}/assets/livingroom.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/livingroom.svg" class="card-icon" />
                 <p>Qonaq Otağı</p>
             </div>
 
             <!-- Card 2 -->
             <div class="card-container" data-bg="diningroom">
-                <img src="{{ url('/') }}/assets/diningroom.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/diningroom.svg" class="card-icon" />
                 <p>Yemək otağı</p>
             </div>
 
             <!-- Card 3 -->
             <div class="card-container" data-bg="bedroom">
-                <img src="{{ url('/') }}/assets/bedroom.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/bedroom.svg" class="card-icon" />
                 <p>Yataq otağı</p>
             </div>
 
             <!-- Card 4 -->
             <div class="card-container" data-bg="bathroom">
-                <img src="{{ url('/') }}/assets/bathroom.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/bathroom.svg" class="card-icon" />
                 <p>Hamam</p>
             </div>
 
             <!-- Card 5 -->
             <div class="card-container" data-bg="office">
-                <img src="{{ url('/') }}/assets/office.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/office.svg" class="card-icon" />
                 <p>Ofis</p>
             </div>
 
             <!-- Card 6 -->
             <div class="card-container" data-bg="exterior">
-                <img src="{{ url('/') }}/assets/exterior.svg" class="card-icon" />
+                <img src="{{ asset('') }}assets/exterior.svg" class="card-icon" />
                 <p>Eksteryer</p>
             </div>
         </div>
@@ -92,7 +92,7 @@
                     <!-- Card 1 -->
                     <div class="feature-card">
                         <img
-                            src="{{ url('/') }}/assets/pencilAndRuler.svg"
+                            src="{{ asset('') }}assets/pencilAndRuler.svg"
                             class="feature-icon"
                             alt="" />
                         <h6>İstədiyiniz Dizaynda Mebel İstehsalı</h6>
@@ -103,7 +103,7 @@
                     </div>
                     <!-- Card 2 -->
                     <div class="feature-card">
-                        <img src="{{ url('/') }}/assets/happyface.svg" class="feature-icon" alt="" />
+                        <img src="{{ asset('') }}assets/happyface.svg" class="feature-icon" alt="" />
                         <h6>500-dən Çox Məmnun Müştəri</h6>
                         <div class="separator"></div>
                         <p>
@@ -112,7 +112,7 @@
                     </div>
                     <!-- Card 3 -->
                     <div class="feature-card">
-                        <img src="{{ url('/') }}/assets/presentation.svg" class="feature-icon" alt="" />
+                        <img src="{{ asset('') }}assets/presentation.svg" class="feature-icon" alt="" />
                         <h6>Tam Peşəkar Xidmət</h6>
                         <div class="separator"></div>
                         <p>
@@ -121,7 +121,7 @@
                     </div>
                     <!-- Card 4 -->
                     <div class="feature-card">
-                        <img src="{{ url('/') }}/assets/clock.svg" class="feature-icon" alt="" />
+                        <img src="{{ asset('') }}assets/clock.svg" class="feature-icon" alt="" />
                         <h6>7/24 Dəstək</h6>
                         <div class="separator"></div>
                         <p>
@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="image-section">
-                <img src="{{ url('/') }}/mott.jpg" alt="" />
+                <img src="{{ asset('') }}mott.jpg" alt="" />
             </div>
         </div>
     </div>

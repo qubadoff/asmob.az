@@ -23,7 +23,7 @@ class ProjectResource extends Resource
 
     protected static ?string $navigationGroup = 'Layihələr';
 
-    protected static ?string $label = 'Proyektlər';
+    protected static ?string $label = 'Layihələr';
 
 
 
