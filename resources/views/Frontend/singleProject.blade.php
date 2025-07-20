@@ -44,21 +44,25 @@
 
 <h2>{{ $project->name }}</h2>
 
-<div class="category-list" id="categoryList">
-    @foreach($categories as $category)
-        <div class="category-item" data-category-id="{{ $category->id }}">
-            {{ $category->name }} ({{ $category->image_count }})
-        </div>
-    @endforeach
-</div>
-
-<div class="gallery-grid" id="galleryGrid">
-    @foreach($galleries->where('project_category_id', $categories->first()->id) as $item)
-        @foreach($item->images as $image)
-            <img src="{{ asset('storage/' . $image) }}" alt="Gallery image">
+@if($categories->isNotEmpty())
+    <div class="category-list" id="categoryList">
+        @foreach($categories as $category)
+            <div class="category-item" data-category-id="{{ $category->id }}">
+                {{ $category->name }} ({{ $category->image_count }})
+            </div>
         @endforeach
-    @endforeach
-</div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+        @foreach($galleries->where('project_category_id', $categories->first()->id) as $item)
+            @foreach($item->images as $image)
+                <img src="{{ asset('storage/' . $image) }}" alt="Gallery image">
+            @endforeach
+        @endforeach
+    </div>
+@else
+    <p>Bu projeye ait kategori veya görsel bulunamadı.</p>
+@endif
 
 <script>
     const galleries = @json($galleries);
@@ -84,7 +88,9 @@
         });
     });
 
-    categoryItems[0].classList.add('active');
+    if (categoryItems.length > 0) {
+        categoryItems[0].classList.add('active');
+    }
 </script>
 
 </body>
