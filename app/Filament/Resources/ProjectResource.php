@@ -25,7 +25,7 @@ class ProjectResource extends Resource
 
     protected static ?string $label = 'Layihələr';
 
-
+    protected static ?int $navigationSort = 1;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
