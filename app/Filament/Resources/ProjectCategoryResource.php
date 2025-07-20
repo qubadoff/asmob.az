@@ -15,11 +15,6 @@ class ProjectCategoryResource extends Resource
 {
     protected static ?string $model = ProjectCategory::class;
 
-    protected static ?string $navigationGroup = 'Layihələr';
-
-    protected static ?string $label = 'Proyekt Kateqoriyaları';
-
-
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -27,7 +22,7 @@ class ProjectCategoryResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    TextInput::make('name')->required()->label('Kateqoriya Adı'),
+                    TextInput::make('name')->required()->label('Ad'),
                 ])
             ]);
     }
@@ -36,8 +31,8 @@ class ProjectCategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')->sortable(),
-                Tables\Columns\TextColumn::make('name')->searchable()->label('Kateqoriya Adı'),
+                Tables\Columns\TextColumn::make('id')->label('ID'),
+                Tables\Columns\TextColumn::make('name')->label('Ad'),
             ])
             ->filters([
                 //
@@ -51,7 +46,7 @@ class ProjectCategoryResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ])->defaultSort('sort_order')->reorderable('sort_order');
+            ]);
     }
 
     public static function getRelations(): array

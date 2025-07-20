@@ -4,10 +4,12 @@ namespace App\Models;
 
 use App\Enum\ProjectStatusEnum;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Project extends Model
 {
+    use SoftDeletes;
+
     protected $table = 'projects';
 
     protected $guarded = ['id'];
@@ -15,14 +17,4 @@ class Project extends Model
     protected $casts = [
         'status' => ProjectStatusEnum::class
     ];
-
-    public function category(): BelongsTo
-    {
-        return $this->belongsTo(ProjectCategory::class);
-    }
-
-    public function otherCategory(): BelongsTo
-    {
-        return $this->belongsTo(OtherCategory::class);
-    }
 }
