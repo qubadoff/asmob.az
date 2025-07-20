@@ -43,15 +43,39 @@
     </style>
 </head>
 <body>
-<a href="{{ route('index') }}" class="btn btn-outline-secondary position-fixed top-0 start-0 m-3 z-3 d-flex align-items-center shadow-sm">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+
+<style>
+    .back-button {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 576px) {
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1050;
+            margin-bottom: 0;
+        }
+
+        .header-wrapper {
+            padding-top: 60px; /* Butona çarpmasın */
+        }
+    }
+</style>
+
+<!-- Geri Dön Butonu -->
+<a href="{{ route('index') }}"
+   class="btn btn-outline-secondary back-button d-flex align-items-center shadow-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+         class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
     </svg>
-    Ana səhifə
+    Geri Dön
 </a>
 
-<br/>
-<br/>
 
 <div class="container py-5">
     <div class="text-center mb-5">
