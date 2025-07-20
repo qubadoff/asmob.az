@@ -160,7 +160,7 @@
     <div class="image-gallery" id="imageGallery">
         @foreach (projects() as $project)
             <div class="gallery-container" data-category="1">
-                <a href="#">
+                <a href="{{ route("singleProject", ['id' => $project->id]) }}">
                     <img src="{{ asset('storage/' . $project->image) }}" class="gallery-item" data-id="1" alt="" />
                     <div class="gallery-overlay" style="opacity: 1; visibility: visible; position: absolute; bottom: 0; background: rgba(0,0,0,0.5); width: 100%; padding: 10px;">
                         <h1 style="color: whitesmoke; margin: 0; font-size: 20px;">{{ $project->name }}</h1>
