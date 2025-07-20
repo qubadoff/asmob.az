@@ -19,7 +19,7 @@ class ProjectCategoryResource extends Resource
 
     protected static ?string $label = 'Layihə kateqoriyaları';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 2;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
