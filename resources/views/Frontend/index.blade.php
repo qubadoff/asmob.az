@@ -158,42 +158,18 @@
 {{--    </div>--}}
 
     <div class="image-gallery" id="imageGallery">
-        @foreach (projects() as $categoryName => $items)
-            @foreach ($items as $project)
-                <div class="gallery-container" data-category="{{ Str::slug($categoryName) }}">
-                    <a href="{{ route('singleOurProjects', $project->id) }}">
-                        <img src="{{ asset('storage/' . $project->images[0]) }}" class="gallery-item" data-id="{{ $project->id }}"  alt=""/>
-                        <div class="gallery-overlay">
-                            <h1 style="color: whitesmoke">{{ $project->name }}</h1>
-                            <p>{{ $categoryName }}</p>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
+        @foreach (projects() as $project)
+            <div class="gallery-container" data-category="1">
+                <a href="#">
+                    <img src="{{ asset('storage/' . $project->image) }}" class="gallery-item" data-id="1"  alt=""/>
+                    <div class="gallery-overlay">
+                        <h1 style="color: whitesmoke">{{ $project->name }}</h1>
+                        <p>{{ $project->description }}</p>
+                    </div>
+                </a>
+            </div>
         @endforeach
     </div>
-
-{{--    <script>--}}
-{{--        document.addEventListener("DOMContentLoaded", function () {--}}
-{{--            const buttons = document.querySelectorAll(".filter-btn");--}}
-{{--            const galleryItems = document.querySelectorAll(".gallery-container");--}}
-
-{{--            buttons.forEach(button => {--}}
-{{--                button.addEventListener("click", function () {--}}
-{{--                    const category = this.getAttribute("data-category");--}}
-{{--                    document.querySelector(".filter-btn.active").classList.remove("active");--}}
-{{--                    this.classList.add("active");--}}
-{{--                    galleryItems.forEach(item => {--}}
-{{--                        if (category === "all" || item.getAttribute("data-category") === category) {--}}
-{{--                            item.style.display = "block";--}}
-{{--                        } else {--}}
-{{--                            item.style.display = "none";--}}
-{{--                        }--}}
-{{--                    });--}}
-{{--                });--}}
-{{--            });--}}
-{{--        });--}}
-{{--    </script>--}}
 
     <div class="featured-works-container">
         <div class="featured-works-header">

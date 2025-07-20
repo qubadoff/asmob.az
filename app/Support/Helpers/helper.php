@@ -1,6 +1,7 @@
 <?php
 
 use App\Enum\NewsStatusEnum;
+use App\Enum\ProjectStatusEnum;
 use App\Models\News;
 use App\Models\Partner;
 use App\Models\Project;
@@ -37,7 +38,7 @@ if (!function_exists('projects'))
 {
     function projects(): Collection
     {
-        return Project::with('category')->get()->groupBy('category.name');
+        return Project::query()->where('status', ProjectStatusEnum::ACTIVE)->get();
     }
 }
 
