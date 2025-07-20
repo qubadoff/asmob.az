@@ -13,8 +13,6 @@ class Project extends Model
     protected $guarded = ['id'];
 
     protected $casts = [
-        'images' => 'array',
-        'videos' => 'array',
         'status' => ProjectStatusEnum::class
     ];
 

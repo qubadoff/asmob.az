@@ -34,24 +34,19 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Select::make('category_id')->relationship('category', 'name')->required()->label('Project Category')->label('Kateqoriya'),
-                    Select::make('other_category_id')->relationship('otherCategory', 'name')->required()->label('Other Category')->label('Alt Kateqoriya'),
                     TextInput::make('name')->label('Başlıq')
                         ->required()
                         ->live(debounce: '1000')
                         ->afterStateUpdated(fn (Set $set,?string  $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->required()->label('Slug'),
                     Textarea::make('description')->nullable()->label('Qısa Məzmun'),
-                    TextInput::make('delivery_time')->required()->label('Təslim vaxtı'),
-                    TextInput::make('materials')->required()->label('Materiallar'),
                     Select::make('status')->options([
                         ProjectStatusEnum::ACTIVE->value => ProjectStatusEnum::ACTIVE->getLabel(),
                         ProjectStatusEnum::INACTIVE->value => ProjectStatusEnum::INACTIVE->getLabel(),
                     ])->required()->label('Status')->default(1),
                 ])->columns(3),
                 Section::make([
-                    FileUpload::make('images')->multiple()->image()->required()->label('Şəkillər'),
-                    FileUpload::make('videos')->multiple()->label('Videolar'),
+                    FileUpload::make('image')->image()->required()->label('Şəkil'),
                 ])->columns()
             ]);
     }
@@ -62,11 +57,8 @@ class ProjectResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
                 Tables\Columns\TextColumn::make('name')->searchable()->label('Başlıq'),
-                Tables\Columns\TextColumn::make('category.name')->searchable()->label('Kateqoriya'),
-                Tables\Columns\TextColumn::make('otherCategory.name')->searchable()->label('Digər Kateqoriya'),
-                Tables\Columns\TextColumn::make('delivery_time')->searchable()->label('Təslim vaxtı'),
                 Tables\Columns\TextColumn::make('status')->badge()->label('Status'),
-                Tables\Columns\ImageColumn::make('images')->label('Şəkiler'),
+                Tables\Columns\ImageColumn::make('image')->label('Şəkiler'),
             ])
             ->filters([
                 //

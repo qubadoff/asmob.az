@@ -14,18 +14,12 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('project_categories')->onDelete('cascade');
             $table->text('name');
             $table->text('description')->nullable();
-            $table->text('images')->nullable();
-            $table->text('videos')->nullable();
-            $table->text('delivery_time')->nullable();
-            $table->text('materials')->nullable();
-            $table->text('slug');
-            $table->integer('status')->default(ProjectStatusEnum::ACTIVE->value);
-            $table->integer('sort_order')->nullable();
+            $table->text('image');
+            $table->text('status')->default(ProjectStatusEnum::ACTIVE);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -34,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('projects');
+        //
     }
 };
