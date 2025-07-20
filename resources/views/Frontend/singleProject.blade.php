@@ -1,46 +1,36 @@
-@extends('Frontend.layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $project->name }}</title>
 
-@section('title', 'Ana səhifə')
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-@section('content')
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-
-        .category-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
+            background-color: #f8f9fa;
         }
 
         .category-item {
-            padding: 8px 16px;
-            background: #f5f5f5;
-            border-radius: 20px;
             cursor: pointer;
-            transition: 0.2s;
+            transition: all 0.3s ease-in-out;
         }
 
         .category-item.active {
-            background: #007bff;
-            color: white;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            background-color: #0d6efd;
+            color: white !important;
         }
 
         .gallery-grid img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
         }
 
         .no-data {
@@ -51,28 +41,37 @@
 </head>
 <body>
 
-<h2>{{ $project->name }}</h2>
+<div class="container py-5">
+    <h1 class="mb-4 text-center">{{ $project->name }}</h1>
 
-@if($categories->isNotEmpty())
-    <div class="category-list" id="categoryList">
-        @foreach($categories as $category)
-            <div class="category-item" data-category-id="{{ $category->id }}">
-                {{ $category->name }} ({{ $category->image_count }})
-            </div>
-        @endforeach
-    </div>
-
-    <div class="gallery-grid" id="galleryGrid">
-        @php $firstCategoryId = $categories->first()->id; @endphp
-        @foreach($galleries->where('project_category_id', $firstCategoryId) as $item)
-            @foreach($item->images ?? [] as $image)
-                <img src="{{ asset('storage/' . $image) }}" alt="Gallery image">
+    @if($categories->isNotEmpty())
+        <!-- Kategori Butonları -->
+        <div class="d-flex flex-wrap justify-content-center mb-4 gap-2" id="categoryList">
+            @foreach($categories as $category)
+                <div class="btn btn-outline-primary category-item" data-category-id="{{ $category->id }}">
+                    {{ $category->name }} ({{ $category->image_count }})
+                </div>
             @endforeach
-        @endforeach
-    </div>
-@else
-    <p class="no-data">Bu projeye ait kategori veya görsel bulunamadı.</p>
-@endif
+        </div>
+
+        <!-- Galeri Grid -->
+        <div class="row gallery-grid" id="galleryGrid">
+            @php $firstCategoryId = $categories->first()->id; @endphp
+            @foreach($galleries->where('project_category_id', $firstCategoryId) as $item)
+                @foreach($item->images ?? [] as $image)
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <img src="{{ asset('storage/' . $image) }}" class="img-fluid shadow-sm" alt="Gallery image">
+                    </div>
+                @endforeach
+            @endforeach
+        </div>
+    @else
+        <p class="text-center no-data">Bu projeye ait kategori veya görsel bulunamadı.</p>
+    @endif
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     const galleries = @json($galleries);
@@ -90,7 +89,10 @@
             let html = '';
             filtered.forEach(gallery => {
                 (gallery.images || []).forEach(image => {
-                    html += `<img src="/storage/${image}" alt="Image">`;
+                    html += `
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <img src="/storage/${image}" class="img-fluid shadow-sm" alt="Image">
+                        </div>`;
                 });
             });
 
@@ -104,4 +106,4 @@
 </script>
 
 </body>
-@endsection
+</html>
